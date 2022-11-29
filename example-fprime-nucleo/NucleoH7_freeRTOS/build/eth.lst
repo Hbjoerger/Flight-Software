@@ -1,0 +1,895 @@
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"eth.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.MX_ETH_Init,"ax",%progbits
+  19              		.align	1
+  20              		.global	MX_ETH_Init
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	MX_ETH_Init:
+  26              	.LFB144:
+  27              		.file 1 "Core/Src/eth.c"
+   1:Core/Src/eth.c **** /**
+   2:Core/Src/eth.c ****   ******************************************************************************
+   3:Core/Src/eth.c ****   * @file    eth.c
+   4:Core/Src/eth.c ****   * @brief   This file provides code for the configuration
+   5:Core/Src/eth.c ****   *          of the ETH instances.
+   6:Core/Src/eth.c ****   ******************************************************************************
+   7:Core/Src/eth.c ****   * @attention
+   8:Core/Src/eth.c ****   *
+   9:Core/Src/eth.c ****   * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  10:Core/Src/eth.c ****   * All rights reserved.</center></h2>
+  11:Core/Src/eth.c ****   *
+  12:Core/Src/eth.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  13:Core/Src/eth.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  14:Core/Src/eth.c ****   * the License. You may obtain a copy of the License at:
+  15:Core/Src/eth.c ****   *                             www.st.com/SLA0044
+  16:Core/Src/eth.c ****   *
+  17:Core/Src/eth.c ****   ******************************************************************************
+  18:Core/Src/eth.c ****   */
+  19:Core/Src/eth.c **** 
+  20:Core/Src/eth.c **** /* Includes ------------------------------------------------------------------*/
+  21:Core/Src/eth.c **** #include "eth.h"
+  22:Core/Src/eth.c **** 
+  23:Core/Src/eth.c **** #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+  24:Core/Src/eth.c **** 
+  25:Core/Src/eth.c **** #pragma location=0x30040000
+  26:Core/Src/eth.c **** ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT]; /* Ethernet Rx DMA Descriptors */
+  27:Core/Src/eth.c **** #pragma location=0x30040060
+  28:Core/Src/eth.c **** ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptors */
+  29:Core/Src/eth.c **** #pragma location=0x30040200
+  30:Core/Src/eth.c **** uint8_t Rx_Buff[ETH_RX_DESC_CNT][ETH_MAX_PACKET_SIZE]; /* Ethernet Receive Buffers */
+  31:Core/Src/eth.c **** 
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 2
+
+
+  32:Core/Src/eth.c **** #elif defined ( __CC_ARM )  /* MDK ARM Compiler */
+  33:Core/Src/eth.c **** 
+  34:Core/Src/eth.c **** __attribute__((at(0x30040000))) ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT]; /* Ethernet Rx D
+  35:Core/Src/eth.c **** __attribute__((at(0x30040060))) ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx D
+  36:Core/Src/eth.c **** __attribute__((at(0x30040200))) uint8_t Rx_Buff[ETH_RX_DESC_CNT][ETH_MAX_PACKET_SIZE]; /* Ethernet 
+  37:Core/Src/eth.c **** 
+  38:Core/Src/eth.c **** #elif defined ( __GNUC__ ) /* GNU Compiler */
+  39:Core/Src/eth.c **** 
+  40:Core/Src/eth.c **** ETH_DMADescTypeDef DMARxDscrTab[ETH_RX_DESC_CNT] __attribute__((section(".RxDecripSection"))); /* E
+  41:Core/Src/eth.c **** ETH_DMADescTypeDef DMATxDscrTab[ETH_TX_DESC_CNT] __attribute__((section(".TxDecripSection")));   /*
+  42:Core/Src/eth.c **** uint8_t Rx_Buff[ETH_RX_DESC_CNT][ETH_MAX_PACKET_SIZE] __attribute__((section(".RxArraySection"))); 
+  43:Core/Src/eth.c **** 
+  44:Core/Src/eth.c **** #endif
+  45:Core/Src/eth.c **** 
+  46:Core/Src/eth.c **** ETH_TxPacketConfig TxConfig;
+  47:Core/Src/eth.c **** 
+  48:Core/Src/eth.c **** /* USER CODE BEGIN 0 */
+  49:Core/Src/eth.c **** 
+  50:Core/Src/eth.c **** /* USER CODE END 0 */
+  51:Core/Src/eth.c **** 
+  52:Core/Src/eth.c **** ETH_HandleTypeDef heth;
+  53:Core/Src/eth.c **** 
+  54:Core/Src/eth.c **** /* ETH init function */
+  55:Core/Src/eth.c **** void MX_ETH_Init(void)
+  56:Core/Src/eth.c **** {
+  28              		.loc 1 56 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              	.LCFI0:
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  57:Core/Src/eth.c **** 
+  58:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_Init 0 */
+  59:Core/Src/eth.c **** 
+  60:Core/Src/eth.c ****   /* USER CODE END ETH_Init 0 */
+  61:Core/Src/eth.c **** 
+  62:Core/Src/eth.c ****    static uint8_t MACAddr[6];
+  37              		.loc 1 62 4 view .LVU1
+  63:Core/Src/eth.c **** 
+  64:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_Init 1 */
+  65:Core/Src/eth.c **** 
+  66:Core/Src/eth.c ****   /* USER CODE END ETH_Init 1 */
+  67:Core/Src/eth.c ****   heth.Instance = ETH;
+  38              		.loc 1 67 3 view .LVU2
+  39              		.loc 1 67 17 is_stmt 0 view .LVU3
+  40 0002 1448     		ldr	r0, .L5
+  41 0004 144B     		ldr	r3, .L5+4
+  42 0006 0360     		str	r3, [r0]
+  68:Core/Src/eth.c ****   MACAddr[0] = 0x00;
+  43              		.loc 1 68 3 is_stmt 1 view .LVU4
+  44              		.loc 1 68 14 is_stmt 0 view .LVU5
+  45 0008 144B     		ldr	r3, .L5+8
+  46 000a 0022     		movs	r2, #0
+  47 000c 1A70     		strb	r2, [r3]
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 3
+
+
+  69:Core/Src/eth.c ****   MACAddr[1] = 0x80;
+  48              		.loc 1 69 3 is_stmt 1 view .LVU6
+  49              		.loc 1 69 14 is_stmt 0 view .LVU7
+  50 000e 8021     		movs	r1, #128
+  51 0010 5970     		strb	r1, [r3, #1]
+  70:Core/Src/eth.c ****   MACAddr[2] = 0xE1;
+  52              		.loc 1 70 3 is_stmt 1 view .LVU8
+  53              		.loc 1 70 14 is_stmt 0 view .LVU9
+  54 0012 E121     		movs	r1, #225
+  55 0014 9970     		strb	r1, [r3, #2]
+  71:Core/Src/eth.c ****   MACAddr[3] = 0x00;
+  56              		.loc 1 71 3 is_stmt 1 view .LVU10
+  57              		.loc 1 71 14 is_stmt 0 view .LVU11
+  58 0016 DA70     		strb	r2, [r3, #3]
+  72:Core/Src/eth.c ****   MACAddr[4] = 0x00;
+  59              		.loc 1 72 3 is_stmt 1 view .LVU12
+  60              		.loc 1 72 14 is_stmt 0 view .LVU13
+  61 0018 1A71     		strb	r2, [r3, #4]
+  73:Core/Src/eth.c ****   MACAddr[5] = 0x00;
+  62              		.loc 1 73 3 is_stmt 1 view .LVU14
+  63              		.loc 1 73 14 is_stmt 0 view .LVU15
+  64 001a 5A71     		strb	r2, [r3, #5]
+  74:Core/Src/eth.c ****   heth.Init.MACAddr = &MACAddr[0];
+  65              		.loc 1 74 3 is_stmt 1 view .LVU16
+  66              		.loc 1 74 21 is_stmt 0 view .LVU17
+  67 001c 4360     		str	r3, [r0, #4]
+  75:Core/Src/eth.c ****   heth.Init.MediaInterface = HAL_ETH_RMII_MODE;
+  68              		.loc 1 75 3 is_stmt 1 view .LVU18
+  69              		.loc 1 75 28 is_stmt 0 view .LVU19
+  70 001e 0123     		movs	r3, #1
+  71 0020 0372     		strb	r3, [r0, #8]
+  76:Core/Src/eth.c ****   heth.Init.TxDesc = DMATxDscrTab;
+  72              		.loc 1 76 3 is_stmt 1 view .LVU20
+  73              		.loc 1 76 20 is_stmt 0 view .LVU21
+  74 0022 0F4B     		ldr	r3, .L5+12
+  75 0024 C360     		str	r3, [r0, #12]
+  77:Core/Src/eth.c ****   heth.Init.RxDesc = DMARxDscrTab;
+  76              		.loc 1 77 3 is_stmt 1 view .LVU22
+  77              		.loc 1 77 20 is_stmt 0 view .LVU23
+  78 0026 0F4B     		ldr	r3, .L5+16
+  79 0028 0361     		str	r3, [r0, #16]
+  78:Core/Src/eth.c ****   heth.Init.RxBuffLen = 1524;
+  80              		.loc 1 78 3 is_stmt 1 view .LVU24
+  81              		.loc 1 78 23 is_stmt 0 view .LVU25
+  82 002a 40F2F453 		movw	r3, #1524
+  83 002e 4361     		str	r3, [r0, #20]
+  79:Core/Src/eth.c **** 
+  80:Core/Src/eth.c ****   /* USER CODE BEGIN MACADDRESS */
+  81:Core/Src/eth.c **** 
+  82:Core/Src/eth.c ****   /* USER CODE END MACADDRESS */
+  83:Core/Src/eth.c **** 
+  84:Core/Src/eth.c ****   if (HAL_ETH_Init(&heth) != HAL_OK)
+  84              		.loc 1 84 3 is_stmt 1 view .LVU26
+  85              		.loc 1 84 7 is_stmt 0 view .LVU27
+  86 0030 FFF7FEFF 		bl	HAL_ETH_Init
+  87              	.LVL0:
+  88              		.loc 1 84 6 view .LVU28
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 4
+
+
+  89 0034 58B9     		cbnz	r0, .L4
+  90              	.L2:
+  85:Core/Src/eth.c ****   {
+  86:Core/Src/eth.c ****     Error_Handler();
+  87:Core/Src/eth.c ****   }
+  88:Core/Src/eth.c **** 
+  89:Core/Src/eth.c ****   memset(&TxConfig, 0 , sizeof(ETH_TxPacketConfig));
+  91              		.loc 1 89 3 is_stmt 1 view .LVU29
+  92 0036 0C4C     		ldr	r4, .L5+20
+  93 0038 3422     		movs	r2, #52
+  94 003a 0021     		movs	r1, #0
+  95 003c 2046     		mov	r0, r4
+  96 003e FFF7FEFF 		bl	memset
+  97              	.LVL1:
+  90:Core/Src/eth.c ****   TxConfig.Attributes = ETH_TX_PACKETS_FEATURES_CSUM | ETH_TX_PACKETS_FEATURES_CRCPAD;
+  98              		.loc 1 90 3 view .LVU30
+  99              		.loc 1 90 23 is_stmt 0 view .LVU31
+ 100 0042 2123     		movs	r3, #33
+ 101 0044 2360     		str	r3, [r4]
+  91:Core/Src/eth.c ****   TxConfig.ChecksumCtrl = ETH_CHECKSUM_IPHDR_PAYLOAD_INSERT_PHDR_CALC;
+ 102              		.loc 1 91 3 is_stmt 1 view .LVU32
+ 103              		.loc 1 91 25 is_stmt 0 view .LVU33
+ 104 0046 4FF44033 		mov	r3, #196608
+ 105 004a 6361     		str	r3, [r4, #20]
+  92:Core/Src/eth.c ****   TxConfig.CRCPadCtrl = ETH_CRC_PAD_INSERT;
+ 106              		.loc 1 92 3 is_stmt 1 view .LVU34
+  93:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_Init 2 */
+  94:Core/Src/eth.c **** 
+  95:Core/Src/eth.c ****   /* USER CODE END ETH_Init 2 */
+  96:Core/Src/eth.c **** 
+  97:Core/Src/eth.c **** }
+ 107              		.loc 1 97 1 is_stmt 0 view .LVU35
+ 108 004c 10BD     		pop	{r4, pc}
+ 109              	.L4:
+  86:Core/Src/eth.c ****   }
+ 110              		.loc 1 86 5 is_stmt 1 view .LVU36
+ 111 004e FFF7FEFF 		bl	Error_Handler
+ 112              	.LVL2:
+ 113 0052 F0E7     		b	.L2
+ 114              	.L6:
+ 115              		.align	2
+ 116              	.L5:
+ 117 0054 00000000 		.word	.LANCHOR0
+ 118 0058 00800240 		.word	1073905664
+ 119 005c 00000000 		.word	.LANCHOR1
+ 120 0060 00000000 		.word	.LANCHOR2
+ 121 0064 00000000 		.word	.LANCHOR3
+ 122 0068 00000000 		.word	.LANCHOR4
+ 123              		.cfi_endproc
+ 124              	.LFE144:
+ 126              		.section	.text.HAL_ETH_MspInit,"ax",%progbits
+ 127              		.align	1
+ 128              		.global	HAL_ETH_MspInit
+ 129              		.syntax unified
+ 130              		.thumb
+ 131              		.thumb_func
+ 133              	HAL_ETH_MspInit:
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 5
+
+
+ 134              	.LVL3:
+ 135              	.LFB145:
+  98:Core/Src/eth.c **** 
+  99:Core/Src/eth.c **** void HAL_ETH_MspInit(ETH_HandleTypeDef* ethHandle)
+ 100:Core/Src/eth.c **** {
+ 136              		.loc 1 100 1 view -0
+ 137              		.cfi_startproc
+ 138              		@ args = 0, pretend = 0, frame = 48
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140              		.loc 1 100 1 is_stmt 0 view .LVU38
+ 141 0000 70B5     		push	{r4, r5, r6, lr}
+ 142              	.LCFI1:
+ 143              		.cfi_def_cfa_offset 16
+ 144              		.cfi_offset 4, -16
+ 145              		.cfi_offset 5, -12
+ 146              		.cfi_offset 6, -8
+ 147              		.cfi_offset 14, -4
+ 148 0002 8CB0     		sub	sp, sp, #48
+ 149              	.LCFI2:
+ 150              		.cfi_def_cfa_offset 64
+ 101:Core/Src/eth.c **** 
+ 102:Core/Src/eth.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
+ 151              		.loc 1 102 3 is_stmt 1 view .LVU39
+ 152              		.loc 1 102 20 is_stmt 0 view .LVU40
+ 153 0004 0023     		movs	r3, #0
+ 154 0006 0793     		str	r3, [sp, #28]
+ 155 0008 0893     		str	r3, [sp, #32]
+ 156 000a 0993     		str	r3, [sp, #36]
+ 157 000c 0A93     		str	r3, [sp, #40]
+ 158 000e 0B93     		str	r3, [sp, #44]
+ 103:Core/Src/eth.c ****   if(ethHandle->Instance==ETH)
+ 159              		.loc 1 103 3 is_stmt 1 view .LVU41
+ 160              		.loc 1 103 15 is_stmt 0 view .LVU42
+ 161 0010 0268     		ldr	r2, [r0]
+ 162              		.loc 1 103 5 view .LVU43
+ 163 0012 434B     		ldr	r3, .L11
+ 164 0014 9A42     		cmp	r2, r3
+ 165 0016 01D0     		beq	.L10
+ 166              	.LVL4:
+ 167              	.L7:
+ 104:Core/Src/eth.c ****   {
+ 105:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_MspInit 0 */
+ 106:Core/Src/eth.c **** 
+ 107:Core/Src/eth.c ****   /* USER CODE END ETH_MspInit 0 */
+ 108:Core/Src/eth.c ****     /* ETH clock enable */
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1MAC_CLK_ENABLE();
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ 111:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 112:Core/Src/eth.c **** 
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOC_CLK_ENABLE();
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 116:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 117:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 118:Core/Src/eth.c ****     PC1     ------> ETH_MDC
+ 119:Core/Src/eth.c ****     PA1     ------> ETH_REF_CLK
+ 120:Core/Src/eth.c ****     PA2     ------> ETH_MDIO
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 6
+
+
+ 121:Core/Src/eth.c ****     PA7     ------> ETH_CRS_DV
+ 122:Core/Src/eth.c ****     PC4     ------> ETH_RXD0
+ 123:Core/Src/eth.c ****     PC5     ------> ETH_RXD1
+ 124:Core/Src/eth.c ****     PB13     ------> ETH_TXD1
+ 125:Core/Src/eth.c ****     PG11     ------> ETH_TX_EN
+ 126:Core/Src/eth.c ****     PG13     ------> ETH_TXD0
+ 127:Core/Src/eth.c ****     */
+ 128:Core/Src/eth.c ****     GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_5;
+ 129:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 130:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 131:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 132:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 133:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+ 134:Core/Src/eth.c **** 
+ 135:Core/Src/eth.c ****     GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_7;
+ 136:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 137:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 138:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 139:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 140:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 141:Core/Src/eth.c **** 
+ 142:Core/Src/eth.c ****     GPIO_InitStruct.Pin = GPIO_PIN_13;
+ 143:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 144:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 145:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 146:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 147:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+ 148:Core/Src/eth.c **** 
+ 149:Core/Src/eth.c ****     GPIO_InitStruct.Pin = GPIO_PIN_11|GPIO_PIN_13;
+ 150:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 151:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 152:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 153:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 154:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+ 155:Core/Src/eth.c **** 
+ 156:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_MspInit 1 */
+ 157:Core/Src/eth.c **** 
+ 158:Core/Src/eth.c ****   /* USER CODE END ETH_MspInit 1 */
+ 159:Core/Src/eth.c ****   }
+ 160:Core/Src/eth.c **** }
+ 168              		.loc 1 160 1 view .LVU44
+ 169 0018 0CB0     		add	sp, sp, #48
+ 170              	.LCFI3:
+ 171              		.cfi_remember_state
+ 172              		.cfi_def_cfa_offset 16
+ 173              		@ sp needed
+ 174 001a 70BD     		pop	{r4, r5, r6, pc}
+ 175              	.LVL5:
+ 176              	.L10:
+ 177              	.LCFI4:
+ 178              		.cfi_restore_state
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ 179              		.loc 1 109 5 is_stmt 1 view .LVU45
+ 180              	.LBB2:
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ 181              		.loc 1 109 5 view .LVU46
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 7
+
+
+ 182              		.loc 1 109 5 view .LVU47
+ 183 001c 414B     		ldr	r3, .L11+4
+ 184 001e D3F8D820 		ldr	r2, [r3, #216]
+ 185 0022 42F40042 		orr	r2, r2, #32768
+ 186 0026 C3F8D820 		str	r2, [r3, #216]
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ 187              		.loc 1 109 5 view .LVU48
+ 188 002a D3F8D820 		ldr	r2, [r3, #216]
+ 189 002e 02F40042 		and	r2, r2, #32768
+ 190 0032 0092     		str	r2, [sp]
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ 191              		.loc 1 109 5 view .LVU49
+ 192 0034 009A     		ldr	r2, [sp]
+ 193              	.LBE2:
+ 109:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_ENABLE();
+ 194              		.loc 1 109 5 view .LVU50
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 195              		.loc 1 110 5 view .LVU51
+ 196              	.LBB3:
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 197              		.loc 1 110 5 view .LVU52
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 198              		.loc 1 110 5 view .LVU53
+ 199 0036 D3F8D820 		ldr	r2, [r3, #216]
+ 200 003a 42F48032 		orr	r2, r2, #65536
+ 201 003e C3F8D820 		str	r2, [r3, #216]
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 202              		.loc 1 110 5 view .LVU54
+ 203 0042 D3F8D820 		ldr	r2, [r3, #216]
+ 204 0046 02F48032 		and	r2, r2, #65536
+ 205 004a 0192     		str	r2, [sp, #4]
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 206              		.loc 1 110 5 view .LVU55
+ 207 004c 019A     		ldr	r2, [sp, #4]
+ 208              	.LBE3:
+ 110:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_ENABLE();
+ 209              		.loc 1 110 5 view .LVU56
+ 111:Core/Src/eth.c **** 
+ 210              		.loc 1 111 5 view .LVU57
+ 211              	.LBB4:
+ 111:Core/Src/eth.c **** 
+ 212              		.loc 1 111 5 view .LVU58
+ 111:Core/Src/eth.c **** 
+ 213              		.loc 1 111 5 view .LVU59
+ 214 004e D3F8D820 		ldr	r2, [r3, #216]
+ 215 0052 42F40032 		orr	r2, r2, #131072
+ 216 0056 C3F8D820 		str	r2, [r3, #216]
+ 111:Core/Src/eth.c **** 
+ 217              		.loc 1 111 5 view .LVU60
+ 218 005a D3F8D820 		ldr	r2, [r3, #216]
+ 219 005e 02F40032 		and	r2, r2, #131072
+ 220 0062 0292     		str	r2, [sp, #8]
+ 111:Core/Src/eth.c **** 
+ 221              		.loc 1 111 5 view .LVU61
+ 222 0064 029A     		ldr	r2, [sp, #8]
+ 223              	.LBE4:
+ 111:Core/Src/eth.c **** 
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 8
+
+
+ 224              		.loc 1 111 5 view .LVU62
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 225              		.loc 1 113 5 view .LVU63
+ 226              	.LBB5:
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 227              		.loc 1 113 5 view .LVU64
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 228              		.loc 1 113 5 view .LVU65
+ 229 0066 D3F8E020 		ldr	r2, [r3, #224]
+ 230 006a 42F00402 		orr	r2, r2, #4
+ 231 006e C3F8E020 		str	r2, [r3, #224]
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 232              		.loc 1 113 5 view .LVU66
+ 233 0072 D3F8E020 		ldr	r2, [r3, #224]
+ 234 0076 02F00402 		and	r2, r2, #4
+ 235 007a 0392     		str	r2, [sp, #12]
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 236              		.loc 1 113 5 view .LVU67
+ 237 007c 039A     		ldr	r2, [sp, #12]
+ 238              	.LBE5:
+ 113:Core/Src/eth.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+ 239              		.loc 1 113 5 view .LVU68
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 240              		.loc 1 114 5 view .LVU69
+ 241              	.LBB6:
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 242              		.loc 1 114 5 view .LVU70
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 243              		.loc 1 114 5 view .LVU71
+ 244 007e D3F8E020 		ldr	r2, [r3, #224]
+ 245 0082 42F00102 		orr	r2, r2, #1
+ 246 0086 C3F8E020 		str	r2, [r3, #224]
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 247              		.loc 1 114 5 view .LVU72
+ 248 008a D3F8E020 		ldr	r2, [r3, #224]
+ 249 008e 02F00102 		and	r2, r2, #1
+ 250 0092 0492     		str	r2, [sp, #16]
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 251              		.loc 1 114 5 view .LVU73
+ 252 0094 049A     		ldr	r2, [sp, #16]
+ 253              	.LBE6:
+ 114:Core/Src/eth.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
+ 254              		.loc 1 114 5 view .LVU74
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 255              		.loc 1 115 5 view .LVU75
+ 256              	.LBB7:
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 257              		.loc 1 115 5 view .LVU76
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 258              		.loc 1 115 5 view .LVU77
+ 259 0096 D3F8E020 		ldr	r2, [r3, #224]
+ 260 009a 42F00202 		orr	r2, r2, #2
+ 261 009e C3F8E020 		str	r2, [r3, #224]
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 262              		.loc 1 115 5 view .LVU78
+ 263 00a2 D3F8E020 		ldr	r2, [r3, #224]
+ 264 00a6 02F00202 		and	r2, r2, #2
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 9
+
+
+ 265 00aa 0592     		str	r2, [sp, #20]
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 266              		.loc 1 115 5 view .LVU79
+ 267 00ac 059A     		ldr	r2, [sp, #20]
+ 268              	.LBE7:
+ 115:Core/Src/eth.c ****     __HAL_RCC_GPIOG_CLK_ENABLE();
+ 269              		.loc 1 115 5 view .LVU80
+ 116:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 270              		.loc 1 116 5 view .LVU81
+ 271              	.LBB8:
+ 116:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 272              		.loc 1 116 5 view .LVU82
+ 116:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 273              		.loc 1 116 5 view .LVU83
+ 274 00ae D3F8E020 		ldr	r2, [r3, #224]
+ 275 00b2 42F04002 		orr	r2, r2, #64
+ 276 00b6 C3F8E020 		str	r2, [r3, #224]
+ 116:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 277              		.loc 1 116 5 view .LVU84
+ 278 00ba D3F8E030 		ldr	r3, [r3, #224]
+ 279 00be 03F04003 		and	r3, r3, #64
+ 280 00c2 0693     		str	r3, [sp, #24]
+ 116:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 281              		.loc 1 116 5 view .LVU85
+ 282 00c4 069B     		ldr	r3, [sp, #24]
+ 283              	.LBE8:
+ 116:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 284              		.loc 1 116 5 view .LVU86
+ 128:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 285              		.loc 1 128 5 view .LVU87
+ 128:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 286              		.loc 1 128 25 is_stmt 0 view .LVU88
+ 287 00c6 3223     		movs	r3, #50
+ 288 00c8 0793     		str	r3, [sp, #28]
+ 129:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 289              		.loc 1 129 5 is_stmt 1 view .LVU89
+ 129:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 290              		.loc 1 129 26 is_stmt 0 view .LVU90
+ 291 00ca 0226     		movs	r6, #2
+ 292 00cc 0896     		str	r6, [sp, #32]
+ 130:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 293              		.loc 1 130 5 is_stmt 1 view .LVU91
+ 131:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 294              		.loc 1 131 5 view .LVU92
+ 132:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+ 295              		.loc 1 132 5 view .LVU93
+ 132:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+ 296              		.loc 1 132 31 is_stmt 0 view .LVU94
+ 297 00ce 0B25     		movs	r5, #11
+ 298 00d0 0B95     		str	r5, [sp, #44]
+ 133:Core/Src/eth.c **** 
+ 299              		.loc 1 133 5 is_stmt 1 view .LVU95
+ 300 00d2 07A9     		add	r1, sp, #28
+ 301 00d4 1448     		ldr	r0, .L11+8
+ 302              	.LVL6:
+ 133:Core/Src/eth.c **** 
+ 303              		.loc 1 133 5 is_stmt 0 view .LVU96
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 10
+
+
+ 304 00d6 FFF7FEFF 		bl	HAL_GPIO_Init
+ 305              	.LVL7:
+ 135:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 306              		.loc 1 135 5 is_stmt 1 view .LVU97
+ 135:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 307              		.loc 1 135 25 is_stmt 0 view .LVU98
+ 308 00da 8623     		movs	r3, #134
+ 309 00dc 0793     		str	r3, [sp, #28]
+ 136:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 310              		.loc 1 136 5 is_stmt 1 view .LVU99
+ 136:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 311              		.loc 1 136 26 is_stmt 0 view .LVU100
+ 312 00de 0896     		str	r6, [sp, #32]
+ 137:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 313              		.loc 1 137 5 is_stmt 1 view .LVU101
+ 137:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 314              		.loc 1 137 26 is_stmt 0 view .LVU102
+ 315 00e0 0024     		movs	r4, #0
+ 316 00e2 0994     		str	r4, [sp, #36]
+ 138:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 317              		.loc 1 138 5 is_stmt 1 view .LVU103
+ 138:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 318              		.loc 1 138 27 is_stmt 0 view .LVU104
+ 319 00e4 0A94     		str	r4, [sp, #40]
+ 139:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 320              		.loc 1 139 5 is_stmt 1 view .LVU105
+ 139:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 321              		.loc 1 139 31 is_stmt 0 view .LVU106
+ 322 00e6 0B95     		str	r5, [sp, #44]
+ 140:Core/Src/eth.c **** 
+ 323              		.loc 1 140 5 is_stmt 1 view .LVU107
+ 324 00e8 07A9     		add	r1, sp, #28
+ 325 00ea 1048     		ldr	r0, .L11+12
+ 326 00ec FFF7FEFF 		bl	HAL_GPIO_Init
+ 327              	.LVL8:
+ 142:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 328              		.loc 1 142 5 view .LVU108
+ 142:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 329              		.loc 1 142 25 is_stmt 0 view .LVU109
+ 330 00f0 4FF40053 		mov	r3, #8192
+ 331 00f4 0793     		str	r3, [sp, #28]
+ 143:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 332              		.loc 1 143 5 is_stmt 1 view .LVU110
+ 143:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 333              		.loc 1 143 26 is_stmt 0 view .LVU111
+ 334 00f6 0896     		str	r6, [sp, #32]
+ 144:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 335              		.loc 1 144 5 is_stmt 1 view .LVU112
+ 144:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 336              		.loc 1 144 26 is_stmt 0 view .LVU113
+ 337 00f8 0994     		str	r4, [sp, #36]
+ 145:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 338              		.loc 1 145 5 is_stmt 1 view .LVU114
+ 145:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 339              		.loc 1 145 27 is_stmt 0 view .LVU115
+ 340 00fa 0A94     		str	r4, [sp, #40]
+ 146:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 11
+
+
+ 341              		.loc 1 146 5 is_stmt 1 view .LVU116
+ 146:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+ 342              		.loc 1 146 31 is_stmt 0 view .LVU117
+ 343 00fc 0B95     		str	r5, [sp, #44]
+ 147:Core/Src/eth.c **** 
+ 344              		.loc 1 147 5 is_stmt 1 view .LVU118
+ 345 00fe 07A9     		add	r1, sp, #28
+ 346 0100 0B48     		ldr	r0, .L11+16
+ 347 0102 FFF7FEFF 		bl	HAL_GPIO_Init
+ 348              	.LVL9:
+ 149:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 349              		.loc 1 149 5 view .LVU119
+ 149:Core/Src/eth.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 350              		.loc 1 149 25 is_stmt 0 view .LVU120
+ 351 0106 4FF42053 		mov	r3, #10240
+ 352 010a 0793     		str	r3, [sp, #28]
+ 150:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 353              		.loc 1 150 5 is_stmt 1 view .LVU121
+ 150:Core/Src/eth.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 354              		.loc 1 150 26 is_stmt 0 view .LVU122
+ 355 010c 0896     		str	r6, [sp, #32]
+ 151:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 356              		.loc 1 151 5 is_stmt 1 view .LVU123
+ 151:Core/Src/eth.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 357              		.loc 1 151 26 is_stmt 0 view .LVU124
+ 358 010e 0994     		str	r4, [sp, #36]
+ 152:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 359              		.loc 1 152 5 is_stmt 1 view .LVU125
+ 152:Core/Src/eth.c ****     GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+ 360              		.loc 1 152 27 is_stmt 0 view .LVU126
+ 361 0110 0A94     		str	r4, [sp, #40]
+ 153:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+ 362              		.loc 1 153 5 is_stmt 1 view .LVU127
+ 153:Core/Src/eth.c ****     HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+ 363              		.loc 1 153 31 is_stmt 0 view .LVU128
+ 364 0112 0B95     		str	r5, [sp, #44]
+ 154:Core/Src/eth.c **** 
+ 365              		.loc 1 154 5 is_stmt 1 view .LVU129
+ 366 0114 07A9     		add	r1, sp, #28
+ 367 0116 0748     		ldr	r0, .L11+20
+ 368 0118 FFF7FEFF 		bl	HAL_GPIO_Init
+ 369              	.LVL10:
+ 370              		.loc 1 160 1 is_stmt 0 view .LVU130
+ 371 011c 7CE7     		b	.L7
+ 372              	.L12:
+ 373 011e 00BF     		.align	2
+ 374              	.L11:
+ 375 0120 00800240 		.word	1073905664
+ 376 0124 00440258 		.word	1476543488
+ 377 0128 00080258 		.word	1476528128
+ 378 012c 00000258 		.word	1476526080
+ 379 0130 00040258 		.word	1476527104
+ 380 0134 00180258 		.word	1476532224
+ 381              		.cfi_endproc
+ 382              	.LFE145:
+ 384              		.section	.text.HAL_ETH_MspDeInit,"ax",%progbits
+ 385              		.align	1
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 12
+
+
+ 386              		.global	HAL_ETH_MspDeInit
+ 387              		.syntax unified
+ 388              		.thumb
+ 389              		.thumb_func
+ 391              	HAL_ETH_MspDeInit:
+ 392              	.LVL11:
+ 393              	.LFB146:
+ 161:Core/Src/eth.c **** 
+ 162:Core/Src/eth.c **** void HAL_ETH_MspDeInit(ETH_HandleTypeDef* ethHandle)
+ 163:Core/Src/eth.c **** {
+ 394              		.loc 1 163 1 is_stmt 1 view -0
+ 395              		.cfi_startproc
+ 396              		@ args = 0, pretend = 0, frame = 0
+ 397              		@ frame_needed = 0, uses_anonymous_args = 0
+ 398              		.loc 1 163 1 is_stmt 0 view .LVU132
+ 399 0000 08B5     		push	{r3, lr}
+ 400              	.LCFI5:
+ 401              		.cfi_def_cfa_offset 8
+ 402              		.cfi_offset 3, -8
+ 403              		.cfi_offset 14, -4
+ 164:Core/Src/eth.c **** 
+ 165:Core/Src/eth.c ****   if(ethHandle->Instance==ETH)
+ 404              		.loc 1 165 3 is_stmt 1 view .LVU133
+ 405              		.loc 1 165 15 is_stmt 0 view .LVU134
+ 406 0002 0268     		ldr	r2, [r0]
+ 407              		.loc 1 165 5 view .LVU135
+ 408 0004 144B     		ldr	r3, .L17
+ 409 0006 9A42     		cmp	r2, r3
+ 410 0008 00D0     		beq	.L16
+ 411              	.LVL12:
+ 412              	.L13:
+ 166:Core/Src/eth.c ****   {
+ 167:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_MspDeInit 0 */
+ 168:Core/Src/eth.c **** 
+ 169:Core/Src/eth.c ****   /* USER CODE END ETH_MspDeInit 0 */
+ 170:Core/Src/eth.c ****     /* Peripheral clock disable */
+ 171:Core/Src/eth.c ****     __HAL_RCC_ETH1MAC_CLK_DISABLE();
+ 172:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_DISABLE();
+ 173:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_DISABLE();
+ 174:Core/Src/eth.c **** 
+ 175:Core/Src/eth.c ****     /**ETH GPIO Configuration
+ 176:Core/Src/eth.c ****     PC1     ------> ETH_MDC
+ 177:Core/Src/eth.c ****     PA1     ------> ETH_REF_CLK
+ 178:Core/Src/eth.c ****     PA2     ------> ETH_MDIO
+ 179:Core/Src/eth.c ****     PA7     ------> ETH_CRS_DV
+ 180:Core/Src/eth.c ****     PC4     ------> ETH_RXD0
+ 181:Core/Src/eth.c ****     PC5     ------> ETH_RXD1
+ 182:Core/Src/eth.c ****     PB13     ------> ETH_TXD1
+ 183:Core/Src/eth.c ****     PG11     ------> ETH_TX_EN
+ 184:Core/Src/eth.c ****     PG13     ------> ETH_TXD0
+ 185:Core/Src/eth.c ****     */
+ 186:Core/Src/eth.c ****     HAL_GPIO_DeInit(GPIOC, GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_5);
+ 187:Core/Src/eth.c **** 
+ 188:Core/Src/eth.c ****     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_7);
+ 189:Core/Src/eth.c **** 
+ 190:Core/Src/eth.c ****     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_13);
+ 191:Core/Src/eth.c **** 
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 13
+
+
+ 192:Core/Src/eth.c ****     HAL_GPIO_DeInit(GPIOG, GPIO_PIN_11|GPIO_PIN_13);
+ 193:Core/Src/eth.c **** 
+ 194:Core/Src/eth.c ****   /* USER CODE BEGIN ETH_MspDeInit 1 */
+ 195:Core/Src/eth.c **** 
+ 196:Core/Src/eth.c ****   /* USER CODE END ETH_MspDeInit 1 */
+ 197:Core/Src/eth.c ****   }
+ 198:Core/Src/eth.c **** }
+ 413              		.loc 1 198 1 view .LVU136
+ 414 000a 08BD     		pop	{r3, pc}
+ 415              	.LVL13:
+ 416              	.L16:
+ 171:Core/Src/eth.c ****     __HAL_RCC_ETH1TX_CLK_DISABLE();
+ 417              		.loc 1 171 5 is_stmt 1 view .LVU137
+ 418 000c 134B     		ldr	r3, .L17+4
+ 419 000e D3F8D820 		ldr	r2, [r3, #216]
+ 420 0012 22F40042 		bic	r2, r2, #32768
+ 421 0016 C3F8D820 		str	r2, [r3, #216]
+ 172:Core/Src/eth.c ****     __HAL_RCC_ETH1RX_CLK_DISABLE();
+ 422              		.loc 1 172 5 view .LVU138
+ 423 001a D3F8D820 		ldr	r2, [r3, #216]
+ 424 001e 22F48032 		bic	r2, r2, #65536
+ 425 0022 C3F8D820 		str	r2, [r3, #216]
+ 173:Core/Src/eth.c **** 
+ 426              		.loc 1 173 5 view .LVU139
+ 427 0026 D3F8D820 		ldr	r2, [r3, #216]
+ 428 002a 22F40032 		bic	r2, r2, #131072
+ 429 002e C3F8D820 		str	r2, [r3, #216]
+ 186:Core/Src/eth.c **** 
+ 430              		.loc 1 186 5 view .LVU140
+ 431 0032 3221     		movs	r1, #50
+ 432 0034 0A48     		ldr	r0, .L17+8
+ 433              	.LVL14:
+ 186:Core/Src/eth.c **** 
+ 434              		.loc 1 186 5 is_stmt 0 view .LVU141
+ 435 0036 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 436              	.LVL15:
+ 188:Core/Src/eth.c **** 
+ 437              		.loc 1 188 5 is_stmt 1 view .LVU142
+ 438 003a 8621     		movs	r1, #134
+ 439 003c 0948     		ldr	r0, .L17+12
+ 440 003e FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 441              	.LVL16:
+ 190:Core/Src/eth.c **** 
+ 442              		.loc 1 190 5 view .LVU143
+ 443 0042 4FF40051 		mov	r1, #8192
+ 444 0046 0848     		ldr	r0, .L17+16
+ 445 0048 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 446              	.LVL17:
+ 192:Core/Src/eth.c **** 
+ 447              		.loc 1 192 5 view .LVU144
+ 448 004c 4FF42051 		mov	r1, #10240
+ 449 0050 0648     		ldr	r0, .L17+20
+ 450 0052 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 451              	.LVL18:
+ 452              		.loc 1 198 1 is_stmt 0 view .LVU145
+ 453 0056 D8E7     		b	.L13
+ 454              	.L18:
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 14
+
+
+ 455              		.align	2
+ 456              	.L17:
+ 457 0058 00800240 		.word	1073905664
+ 458 005c 00440258 		.word	1476543488
+ 459 0060 00080258 		.word	1476528128
+ 460 0064 00000258 		.word	1476526080
+ 461 0068 00040258 		.word	1476527104
+ 462 006c 00180258 		.word	1476532224
+ 463              		.cfi_endproc
+ 464              	.LFE146:
+ 466              		.global	heth
+ 467              		.global	TxConfig
+ 468              		.global	Rx_Buff
+ 469              		.global	DMATxDscrTab
+ 470              		.global	DMARxDscrTab
+ 471              		.section	.RxArraySection,"aw"
+ 472              		.align	2
+ 475              	Rx_Buff:
+ 476 0000 00000000 		.space	6112
+ 476      00000000 
+ 476      00000000 
+ 476      00000000 
+ 476      00000000 
+ 477              		.section	.RxDecripSection,"aw"
+ 478              		.align	2
+ 479              		.set	.LANCHOR3,. + 0
+ 482              	DMARxDscrTab:
+ 483 0000 00000000 		.space	96
+ 483      00000000 
+ 483      00000000 
+ 483      00000000 
+ 483      00000000 
+ 484              		.section	.TxDecripSection,"aw"
+ 485              		.align	2
+ 486              		.set	.LANCHOR2,. + 0
+ 489              	DMATxDscrTab:
+ 490 0000 00000000 		.space	96
+ 490      00000000 
+ 490      00000000 
+ 490      00000000 
+ 490      00000000 
+ 491              		.section	.bss.MACAddr.0,"aw",%nobits
+ 492              		.align	2
+ 493              		.set	.LANCHOR1,. + 0
+ 496              	MACAddr.0:
+ 497 0000 00000000 		.space	6
+ 497      0000
+ 498              		.section	.bss.TxConfig,"aw",%nobits
+ 499              		.align	2
+ 500              		.set	.LANCHOR4,. + 0
+ 503              	TxConfig:
+ 504 0000 00000000 		.space	52
+ 504      00000000 
+ 504      00000000 
+ 504      00000000 
+ 504      00000000 
+ 505              		.section	.bss.heth,"aw",%nobits
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 15
+
+
+ 506              		.align	2
+ 507              		.set	.LANCHOR0,. + 0
+ 510              	heth:
+ 511 0000 00000000 		.space	136
+ 511      00000000 
+ 511      00000000 
+ 511      00000000 
+ 511      00000000 
+ 512              		.text
+ 513              	.Letext0:
+ 514              		.file 2 "/usr/local/Cellar/arm-gcc-bin@10/10.3-2021.10_1/arm-none-eabi/include/machine/_default_ty
+ 515              		.file 3 "/usr/local/Cellar/arm-gcc-bin@10/10.3-2021.10_1/arm-none-eabi/include/sys/_stdint.h"
+ 516              		.file 4 "Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h"
+ 517              		.file 5 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h"
+ 518              		.file 6 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h"
+ 519              		.file 7 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h"
+ 520              		.file 8 "Core/Inc/eth.h"
+ 521              		.file 9 "Core/Inc/main.h"
+ 522              		.file 10 "<built-in>"
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s 			page 16
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 eth.c
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:19     .text.MX_ETH_Init:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:25     .text.MX_ETH_Init:0000000000000000 MX_ETH_Init
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:117    .text.MX_ETH_Init:0000000000000054 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:127    .text.HAL_ETH_MspInit:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:133    .text.HAL_ETH_MspInit:0000000000000000 HAL_ETH_MspInit
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:375    .text.HAL_ETH_MspInit:0000000000000120 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:385    .text.HAL_ETH_MspDeInit:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:391    .text.HAL_ETH_MspDeInit:0000000000000000 HAL_ETH_MspDeInit
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:457    .text.HAL_ETH_MspDeInit:0000000000000058 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:510    .bss.heth:0000000000000000 heth
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:503    .bss.TxConfig:0000000000000000 TxConfig
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:475    .RxArraySection:0000000000000000 Rx_Buff
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:489    .TxDecripSection:0000000000000000 DMATxDscrTab
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:482    .RxDecripSection:0000000000000000 DMARxDscrTab
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:472    .RxArraySection:0000000000000000 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:478    .RxDecripSection:0000000000000000 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:485    .TxDecripSection:0000000000000000 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:492    .bss.MACAddr.0:0000000000000000 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:496    .bss.MACAddr.0:0000000000000000 MACAddr.0
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:499    .bss.TxConfig:0000000000000000 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//cctZPBvP.s:506    .bss.heth:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_ETH_Init
+memset
+Error_Handler
+HAL_GPIO_Init
+HAL_GPIO_DeInit
