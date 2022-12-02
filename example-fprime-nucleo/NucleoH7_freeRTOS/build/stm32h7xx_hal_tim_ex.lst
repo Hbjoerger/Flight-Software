@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
   29:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
   30:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****             ##### How to use this driver #####
   31:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   ==============================================================================
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 2
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 2
 
 
   32:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     [..]
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
   86:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief TIM Extended HAL module driver
   87:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @{
   88:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   */
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 3
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 3
 
 
   89:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  143:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     return HAL_ERROR;
  144:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
  145:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 4
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 4
 
 
  146:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Check the parameters */
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  200:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  201:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Program channel 2 in PWM 2 mode with the desired Commutation_Delay*/
  202:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   OC_Config.OCFastMode = TIM_OCFAST_DISABLE;
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 5
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 5
 
 
  203:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   OC_Config.OCIdleState = TIM_OCIDLESTATE_RESET;
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  257:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** #endif /* USE_HAL_TIM_REGISTER_CALLBACKS */
  258:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  259:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Change the DMA burst operation state */
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 6
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 6
 
 
  260:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   htim->DMABurstState = HAL_DMA_BURST_STATE_RESET;
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  314:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   uint32_t tmpsmcr;
  315:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_1_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_1);
  316:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_2_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_2);
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 7
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 7
 
 
  317:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef complementary_channel_1_state = TIM_CHANNEL_N_STATE_GET(htim, TIM_CHA
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  371:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     (in the Hall Sensor Interface the three possible channels that can be used are TIM_CHANNEL_1, T
  372:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CCxChannelCmd(htim->Instance, TIM_CHANNEL_1, TIM_CCx_DISABLE);
  373:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 8
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 8
 
 
  374:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Disable the Peripheral */
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  428:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     tmpsmcr = htim->Instance->SMCR & TIM_SMCR_SMS;
  429:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     if (!IS_TIM_SLAVEMODE_TRIGGER_ENABLED(tmpsmcr))
  430:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 9
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 9
 
 
  431:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       __HAL_TIM_ENABLE(htim);
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  485:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  486:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Check the parameters */
  487:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   assert_param(IS_TIM_HALL_SENSOR_INTERFACE_INSTANCE(htim->Instance));
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 10
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 10
 
 
  488:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  542:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  543:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     __HAL_TIM_ENABLE(htim);
  544:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 11
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 11
 
 
  545:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  599:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     (+) Stop the Complementary Output Compare/PWM and disable DMA transfers.
  600:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  601:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** @endverbatim
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 12
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 12
 
 
  602:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @{
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  656:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
  657:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Stops the TIM Output Compare signal generation on the complementary
  658:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *         output.
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 13
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 13
 
 
  659:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM handle
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  713:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, Channel, HAL_TIM_CHANNEL_STATE_BUSY);
  714:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  715:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   switch (Channel)
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 14
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 14
 
 
  716:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  770:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
  771:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Stops the TIM Output Compare signal generation in interrupt mode
  772:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *         on the complementary output.
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 15
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 15
 
 
  773:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM Output Compare handle
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  827:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Disable the Peripheral */
  828:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   __HAL_TIM_DISABLE(htim);
  829:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 16
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 16
 
 
  830:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Set the TIM complementary channel state */
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  884:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC1]->XferHalfCpltCallback = TIM_DMADelayPulseHalfCplt;
  885:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  886:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       /* Set the DMA error callback */
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 17
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 17
 
 
  887:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC1]->XferErrorCallback = TIM_DMAErrorCCxN ;
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  941:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
  942:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
  943:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 18
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 18
 
 
  944:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Enable the Capture compare channel N */
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  998:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC2]);
  999:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
 1000:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     }
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 19
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 19
 
 
 1001:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1055:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     (+) Start the Complementary One Pulse generation.
 1056:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     (+) Stop the Complementary One Pulse.
 1057:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     (+) Start the Complementary One Pulse and enable interrupts.
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 20
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 20
 
 
 1058:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     (+) Stop the Complementary One Pulse and disable interrupts.
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1112:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
 1113:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 1114:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 21
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 21
 
 
 1115:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Stops the PWM signal generation on the complementary output.
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1169:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Set the TIM complementary channel state */
 1170:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, Channel, HAL_TIM_CHANNEL_STATE_BUSY);
 1171:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 22
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 22
 
 
 1172:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   switch (Channel)
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1226:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
 1227:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Stops the PWM signal generation in interrupt mode on the
 1228:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *         complementary output.
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 23
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 23
 
 
 1229:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM handle
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1283:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 1284:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Disable the Peripheral */
 1285:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   __HAL_TIM_DISABLE(htim);
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 24
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 24
 
 
 1286:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1340:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC1]->XferCpltCallback = TIM_DMADelayPulseNCplt;
 1341:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC1]->XferHalfCpltCallback = TIM_DMADelayPulseHalfCplt;
 1342:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 25
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 25
 
 
 1343:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       /* Set the DMA error callback */
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1397:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     default:
 1398:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
 1399:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 26
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 26
 
 
 1400:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1454:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       __HAL_TIM_DISABLE_DMA(htim, TIM_DMA_CC2);
 1455:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC2]);
 1456:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 27
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 27
 
 
 1457:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     }
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1511:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *         output.
 1512:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @note OutputChannel must match the pulse output channel chosen when calling 
 1513:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *       @ref HAL_TIM_OnePulse_ConfigChannel(). 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 28
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 28
 
 
 1514:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM One Pulse handle
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1568:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @retval HAL status
 1569:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   */
 1570:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** HAL_StatusTypeDef HAL_TIMEx_OnePulseN_Stop(TIM_HandleTypeDef *htim, uint32_t OutputChannel)
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 29
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 29
 
 
 1571:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** {
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1625:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
 1626:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     return HAL_ERROR;
 1627:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 30
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 30
 
 
 1628:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1682:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   __HAL_TIM_MOE_DISABLE(htim);
 1683:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 1684:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Disable the Peripheral */
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 31
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 31
 
 
 1685:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   __HAL_TIM_DISABLE(htim);
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1739:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR13: Internal trigger 13 selected (*)
 1740:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_NONE: No trigger is needed
 1741:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  CommutationSource the Commutation Event source
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 32
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 32
 
 
 1742:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *          This parameter can be one of the following values:
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1796:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR3: Internal trigger 3 selected
 1797:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR2: Internal trigger 12 selected (*)
 1798:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR3: Internal trigger 13 selected (*)
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 33
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 33
 
 
 1799:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_NONE: No trigger is needed
@@ -1978,7 +1978,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1853:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR0: Internal trigger 0 selected
 1854:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR1: Internal trigger 1 selected
 1855:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR2: Internal trigger 2 selected
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 34
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 34
 
 
 1856:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TS_ITR3: Internal trigger 3 selected
@@ -2038,7 +2038,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1910:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 1911:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
 1912:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Configures the TIM in master mode.
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 35
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 35
 
 
 1913:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM handle.
@@ -2098,7 +2098,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1967:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     tmpsmcr |= sMasterConfig->MasterSlaveMode;
 1968:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 1969:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     /* Update TIMx SMCR */
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 36
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 36
 
 
 1970:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     htim->Instance->SMCR = tmpsmcr;
@@ -2158,7 +2158,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2024:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 2025:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   if (IS_TIM_BKIN2_INSTANCE(htim->Instance))
 2026:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 37
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 37
 
 
 2027:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     /* Check the parameters */
@@ -2218,7 +2218,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2081:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   switch (sBreakInputConfig->Source)
 2082:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
 2083:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     case TIM_BREAKINPUTSOURCE_BKIN:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 38
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 38
 
 
 2084:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
@@ -2278,7 +2278,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2138:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       if (sBreakInputConfig->Source != TIM_BREAKINPUTSOURCE_DFSDM1)
 2139:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****         {
 2140:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****           tmporx &= ~bkin_polarity_mask;
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 39
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 39
 
 
 2141:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****           tmporx |= (sBreakInputConfig->Polarity << bkin_polarity_bitpos) & bkin_polarity_mask;
@@ -2338,7 +2338,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2195:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TIM2_ETR_COMP1:              TIM2_ETR is connected to COMP1 output
 2196:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TIM2_ETR_COMP2:              TIM2_ETR is connected to COMP2 output
 2197:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TIM2_ETR_LSE:                TIM2_ETR is connected to LSE
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 40
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 40
 
 
 2198:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TIM2_ETR_SAI1_FSA:           TIM2_ETR is connected to SAI1 FS_A
@@ -2398,7 +2398,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2252:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
 2253:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 2254:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 41
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 41
 
 
 2255:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Select the timer input source
@@ -2458,7 +2458,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2309:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TIM16_TI1_LSE:               TIM16 TI1 is connected to LSE
 2310:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *            @arg TIM_TIM16_TI1_RTC:               TIM16 TI1 is connected to RTC wakeup interrupt
 2311:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 42
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 42
 
 
 2312:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   *         For TIM17, the parameter can have the following values:
@@ -2518,7 +2518,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2366:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 2367:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
 2368:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Group channel 5 and channel 1, 2 or 3
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 43
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 43
 
 
 2369:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM handle.
@@ -2578,7 +2578,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2423:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
 2424:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @brief  Hall commutation changed callback in non-blocking mode
 2425:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @param  htim TIM handle
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 44
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 44
 
 
 2426:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @retval None
@@ -2638,7 +2638,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2480:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
 2481:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /**
 2482:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   * @}
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 45
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 45
 
 
 2483:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   */
@@ -2698,7 +2698,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2537:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   */
 2538:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 2539:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /* Private functions ---------------------------------------------------------*/
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 46
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 46
 
 
 2540:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** /** @defgroup TIMEx_Private_Functions TIMEx Private Functions
@@ -2758,7 +2758,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2594:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     htim->Channel = HAL_TIM_ACTIVE_CHANNEL_1;
 2595:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
 2596:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     if (hdma->Init.Mode == DMA_NORMAL)
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 47
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 47
 
 
 2597:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
@@ -2818,7 +2818,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2651:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   if (hdma == htim->hdma[TIM_DMA_ID_CC1])
 2652:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
 2653:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     htim->Channel = HAL_TIM_ACTIVE_CHANNEL_1;
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 48
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 48
 
 
 2654:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_1, HAL_TIM_CHANNEL_STATE_READY);
@@ -2878,7 +2878,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
   39 0004 0423     		movs	r3, #4
   40 0006 03FA01FC 		lsl	ip, r3, r1
   41              	.LVL2:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 49
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 49
 
 
 2697:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
   85 0004 636A     		ldr	r3, [r4, #36]
 2651:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
   86              		.loc 1 2651 6 view .LVU18
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 50
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 50
 
 
   87 0006 8342     		cmp	r3, r0
@@ -2998,7 +2998,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  125              		.loc 1 2658 5 view .LVU34
 2658:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
  126              		.loc 1 2658 19 is_stmt 0 view .LVU35
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 51
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 51
 
 
  127 002c 0223     		movs	r3, #2
@@ -3058,7 +3058,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  172 0006 8342     		cmp	r3, r0
  173 0008 0ED0     		beq	.L16
 2601:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 52
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 52
 
 
  174              		.loc 1 2601 8 is_stmt 1 view .LVU47
@@ -3118,7 +3118,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2596:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
  212              		.loc 1 2596 5 is_stmt 1 view .LVU64
 2596:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 53
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 53
 
 
  213              		.loc 1 2596 19 is_stmt 0 view .LVU65
@@ -3178,7 +3178,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2621:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  253              		.loc 1 2621 5 view .LVU80
 2621:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 54
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 54
 
 
  254              		.loc 1 2621 19 is_stmt 0 view .LVU81
@@ -3238,7 +3238,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  304              		@ frame_needed = 0, uses_anonymous_args = 0
  138:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  305              		.loc 1 138 3 view .LVU90
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 55
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 55
 
 
  141:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -3298,7 +3298,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  344 001c 51F8040B 		ldr	r0, [r1], #4
  345 0020 FFF7FEFF 		bl	TIM_Base_SetConfig
  346              	.LVL16:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 56
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 56
 
 
  183:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -3358,7 +3358,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  195:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  386              		.loc 1 195 3 is_stmt 1 view .LVU122
  195:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 57
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 57
 
 
  387              		.loc 1 195 7 is_stmt 0 view .LVU123
@@ -3418,7 +3418,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  424 0082 0495     		str	r5, [sp, #16]
  207:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   OC_Config.Pulse = sConfig->Commutation_Delay;
  425              		.loc 1 207 3 is_stmt 1 view .LVU141
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 58
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 58
 
 
  207:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   OC_Config.Pulse = sConfig->Commutation_Delay;
@@ -3478,7 +3478,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  463 00b8 84F84530 		strb	r3, [r4, #69]
  227:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  464              		.loc 1 227 3 view .LVU159
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 59
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 59
 
 
  227:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  510              		.section	.text.HAL_TIMEx_HallSensor_MspDeInit,"ax",%progbits
  511              		.align	1
  512              		.weak	HAL_TIMEx_HallSensor_MspDeInit
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 60
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 60
 
 
  513              		.syntax unified
@@ -3598,7 +3598,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  560 000c 196A     		ldr	r1, [r3, #32]
  561 000e 41F21112 		movw	r2, #4369
  562 0012 1142     		tst	r1, r2
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 61
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 61
 
 
  563 0014 08D1     		bne	.L34
@@ -3658,7 +3658,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  600              		.loc 1 274 3 discriminator 5 view .LVU196
  275:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  601              		.loc 1 275 1 is_stmt 0 discriminator 5 view .LVU197
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 62
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 62
 
 
  602 004c 10BD     		pop	{r4, pc}
@@ -3718,7 +3718,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  646 0016 94F84530 		ldrb	r3, [r4, #69]	@ zero_extendqisi2
  647              	.LVL31:
  321:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 63
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 63
 
 
  648              		.loc 1 321 3 is_stmt 1 view .LVU210
@@ -3778,7 +3778,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  343:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  689              		.loc 1 343 3 is_stmt 1 view .LVU224
  343:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 64
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 64
 
 
  690              		.loc 1 343 7 is_stmt 0 view .LVU225
@@ -3838,7 +3838,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  346:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
  733              		.loc 1 346 5 is_stmt 1 view .LVU237
  346:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 65
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 65
 
 
  734              		.loc 1 346 8 is_stmt 0 view .LVU238
@@ -3898,7 +3898,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  781              		.thumb_func
  783              	HAL_TIMEx_HallSensor_Stop:
  784              	.LVL45:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 66
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 66
 
 
  785              	.LFB149:
@@ -3958,7 +3958,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  827              		.loc 1 379 3 discriminator 5 view .LVU258
  828 0032 84F83F30 		strb	r3, [r4, #63]
  380:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 67
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 67
 
 
  829              		.loc 1 380 3 discriminator 5 view .LVU259
@@ -4018,7 +4018,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  873              		.loc 1 397 3 is_stmt 1 view .LVU271
  397:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef complementary_channel_2_state = TIM_CHANNEL_N_STATE_GET(htim, TIM_CHA
  874              		.loc 1 397 31 is_stmt 0 view .LVU272
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 68
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 68
 
 
  875 0010 90F84430 		ldrb	r3, [r0, #68]	@ zero_extendqisi2
@@ -4078,7 +4078,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  915 0046 D368     		ldr	r3, [r2, #12]
  916 0048 43F00203 		orr	r3, r3, #2
  917 004c D360     		str	r3, [r2, #12]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 69
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 69
 
 
  423:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -4138,7 +4138,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  960 0094 1A60     		str	r2, [r3]
  440:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
  961              		.loc 1 440 10 is_stmt 0 view .LVU299
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 70
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 70
 
 
  962 0096 0020     		movs	r0, #0
@@ -4198,7 +4198,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  440:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
  1004              		.loc 1 440 10 view .LVU312
  1005 00be 0020     		movs	r0, #0
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 71
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 71
 
 
  1006 00c0 FAE7     		b	.L50
@@ -4258,7 +4258,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1054 001c 41F21112 		movw	r2, #4369
  1055 0020 1142     		tst	r1, r2
  1056 0022 08D1     		bne	.L60
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 72
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 72
 
 
  461:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -4318,7 +4318,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1101              	.LCFI12:
  1102              		.cfi_def_cfa_offset 16
  1103              		.cfi_offset 4, -16
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 73
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 73
 
 
  1104              		.cfi_offset 5, -12
@@ -4378,7 +4378,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1144 0036 0BB1     		cbz	r3, .L71
  500:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     }
  1145              		.loc 1 500 14 view .LVU347
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 74
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 74
 
 
  1146 0038 0120     		movs	r0, #1
@@ -4438,7 +4438,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1184              		.loc 1 521 49 view .LVU363
  1185 005e 234A     		ldr	r2, .L72+8
  1186 0060 DA64     		str	r2, [r3, #76]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 75
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 75
 
 
  524:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -4498,7 +4498,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1229 00aa 08D0     		beq	.L64
  533:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  1230              		.loc 1 533 7 discriminator 5 view .LVU376
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 76
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 76
 
 
  1231 00ac A2F56C42 		sub	r2, r2, #60416
@@ -4558,7 +4558,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1273              		.loc 1 548 1 view .LVU388
  1274 00de 70BD     		pop	{r4, r5, r6, pc}
  1275              	.LVL86:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 77
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 77
 
 
  1276              	.L69:
@@ -4618,7 +4618,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1325 0016 D360     		str	r3, [r2, #12]
  568:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  1326              		.loc 1 568 3 view .LVU396
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 78
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 78
 
 
  568:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -4678,7 +4678,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  617:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   uint32_t tmpsmcr;
  1372              		.loc 1 617 1 is_stmt 1 view -0
  1373              		.cfi_startproc
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 79
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 79
 
 
  1374              		@ args = 0, pretend = 0, frame = 0
@@ -4738,7 +4738,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1415 0028 2068     		ldr	r0, [r4]
  1416              	.LVL94:
  633:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 80
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 80
 
 
  1417              		.loc 1 633 3 view .LVU422
@@ -4798,7 +4798,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1460 0078 37E0     		b	.L82
  1461              	.LVL96:
  1462              	.L78:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 81
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 81
 
 
  624:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -4858,7 +4858,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1506              	.L94:
  630:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  1507              		.loc 1 630 3 discriminator 3 view .LVU445
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 82
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 82
 
 
  1508 00bc 0223     		movs	r3, #2
@@ -4918,7 +4918,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1550              		.loc 1 653 10 view .LVU457
  1551 00ec 0020     		movs	r0, #0
  1552 00ee FCE7     		b	.L82
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 83
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 83
 
 
  1553              	.L97:
@@ -4978,7 +4978,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1601 001a 196A     		ldr	r1, [r3, #32]
  1602 001c 40F24442 		movw	r2, #1092
  1603 0020 1142     		tst	r1, r2
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 84
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 84
 
 
  1604 0022 03D1     		bne	.L99
@@ -5038,7 +5038,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1645 005a 082D     		cmp	r5, #8
  1646 005c 07D0     		beq	.L107
  682:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 85
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 85
 
 
  1647              		.loc 1 682 3 discriminator 7 view .LVU479
@@ -5098,7 +5098,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  707:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  1694              		.loc 1 707 7 discriminator 1 view .LVU489
  1695 000a 94F84430 		ldrb	r3, [r4, #68]	@ zero_extendqisi2
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 86
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 86
 
 
  1696 000e DBB2     		uxtb	r3, r3
@@ -5158,7 +5158,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  753:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  1740              		.loc 1 753 3 view .LVU500
  753:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 87
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 87
 
 
  1741              		.loc 1 753 7 is_stmt 0 view .LVU501
@@ -5218,7 +5218,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1784              		.loc 1 707 7 discriminator 8 view .LVU512
  1785 009a 94F84730 		ldrb	r3, [r4, #71]	@ zero_extendqisi2
  1786 009e DBB2     		uxtb	r3, r3
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 88
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 88
 
 
  707:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -5278,7 +5278,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1831              	.L126:
  720:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
  1832              		.loc 1 720 7 is_stmt 1 view .LVU523
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 89
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 89
 
 
  1833 00e4 2268     		ldr	r2, [r4]
@@ -5338,7 +5338,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1875 011e 1A60     		str	r2, [r3]
  767:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
  1876              		.loc 1 767 10 view .LVU536
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 90
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 90
 
 
  1877 0120 0020     		movs	r0, #0
@@ -5398,7 +5398,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  787:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  1926              		.loc 1 787 3 view .LVU544
  1927 0006 0429     		cmp	r1, #4
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 91
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 91
 
 
  1928 0008 3CD0     		beq	.L134
@@ -5458,7 +5458,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  1969              		.loc 1 825 3 is_stmt 1 discriminator 1 view .LVU557
  1970 003c 196A     		ldr	r1, [r3, #32]
  1971 003e 40F24442 		movw	r2, #1092
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 92
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 92
 
 
  1972 0042 1142     		tst	r1, r2
@@ -5518,7 +5518,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2014 0080 D360     		str	r3, [r2, #12]
  793:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     }
  2015              		.loc 1 793 7 view .LVU570
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 93
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 93
 
 
  2016 0082 C6E7     		b	.L136
@@ -5578,7 +5578,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2062              		.thumb
  2063              		.thumb_func
  2065              	HAL_TIMEx_OCN_Start_DMA:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 94
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 94
 
 
  2066              	.LVL127:
@@ -5638,7 +5638,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2107              		.loc 1 862 12 discriminator 1 view .LVU592
  2108 0024 94F84420 		ldrb	r2, [r4, #68]	@ zero_extendqisi2
  2109              	.LVL129:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 95
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 95
 
 
  862:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -5698,7 +5698,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2153              		.loc 1 948 3 view .LVU603
  2154 006e 2268     		ldr	r2, [r4]
  2155 0070 536C     		ldr	r3, [r2, #68]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 96
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 96
 
 
  2156 0072 43F40043 		orr	r3, r3, #32768
@@ -5758,7 +5758,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  858:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  2199              		.loc 1 858 46 discriminator 5 view .LVU615
  2200 00ca 0829     		cmp	r1, #8
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 97
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 97
 
 
  2201 00cc 0FD0     		beq	.L177
@@ -5818,7 +5818,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2244 0102 082D     		cmp	r5, #8
  2245 0104 0FD0     		beq	.L179
  862:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 98
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 98
 
 
  2246              		.loc 1 862 12 discriminator 8 view .LVU627
@@ -5878,7 +5878,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  870:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     }
  2290              		.loc 1 870 7 discriminator 7 view .LVU638
  2291 013e 0222     		movs	r2, #2
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 99
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 99
 
 
  2292 0140 84F84720 		strb	r2, [r4, #71]
@@ -5938,7 +5938,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2331 016e 606A     		ldr	r0, [r4, #36]
  2332 0170 FFF7FEFF 		bl	HAL_DMA_Start_IT
  2333              	.LVL144:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 100
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 100
 
 
  890:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       {
@@ -5998,7 +5998,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2372 019c A06A     		ldr	r0, [r4, #40]
  2373 019e FFF7FEFF 		bl	HAL_DMA_Start_IT
  2374              	.LVL147:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 101
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 101
 
 
  910:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       {
@@ -6058,7 +6058,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2413 01ca E06A     		ldr	r0, [r4, #44]
  2414 01cc FFF7FEFF 		bl	HAL_DMA_Start_IT
  2415              	.LVL150:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 102
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 102
 
 
  930:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       {
@@ -6118,7 +6118,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2457              	.LVL155:
  2458              	.L153:
  966:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 103
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 103
 
 
  2459              		.loc 1 966 1 view .LVU699
@@ -6178,7 +6178,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  980:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Check the parameters */
  2509              		.loc 1 980 1 is_stmt 0 view .LVU706
  2510 0000 38B5     		push	{r3, r4, r5, lr}
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 104
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 104
 
 
  2511              	.LCFI19:
@@ -6238,7 +6238,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2555 003a 196A     		ldr	r1, [r3, #32]
  2556 003c 41F21112 		movw	r2, #4369
  2557 0040 1142     		tst	r1, r2
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 105
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 105
 
 
  2558 0042 08D1     		bne	.L189
@@ -6298,7 +6298,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2599 0074 0268     		ldr	r2, [r0]
  2600 0076 D368     		ldr	r3, [r2, #12]
  2601 0078 23F48063 		bic	r3, r3, #1024
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 106
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 106
 
 
  2602 007c D360     		str	r3, [r2, #12]
@@ -6358,7 +6358,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2643 00ae D6E7     		b	.L191
  2644              	.L197:
 1024:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 107
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 107
 
 
  2645              		.loc 1 1024 3 discriminator 6 view .LVU743
@@ -6418,7 +6418,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2691 0016 002B     		cmp	r3, #0
  2692 0018 66D1     		bne	.L210
 1088:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 108
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 108
 
 
  2693              		.loc 1 1088 3 is_stmt 1 view .LVU754
@@ -6478,7 +6478,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1097:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  2736              		.loc 1 1097 7 discriminator 4 view .LVU766
  2737 005e 02F57842 		add	r2, r2, #63488
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 109
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 109
 
 
  2738 0062 9342     		cmp	r3, r2
@@ -6538,7 +6538,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2781 00a4 013B     		subs	r3, r3, #1
  2782 00a6 18BF     		it	ne
  2783 00a8 0123     		movne	r3, #1
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 110
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 110
 
 
  2784 00aa B4E7     		b	.L200
@@ -6598,7 +6598,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2826 00e2 1A60     		str	r2, [r3]
 1111:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
  2827              		.loc 1 1111 10 view .LVU790
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 111
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 111
 
 
  2828 00e4 0020     		movs	r0, #0
@@ -6658,7 +6658,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2877 0006 0022     		movs	r2, #0
  2878 0008 0068     		ldr	r0, [r0]
  2879              	.LVL184:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 112
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 112
 
 
 1130:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -6718,7 +6718,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2921              		.loc 1 1139 3 is_stmt 0 discriminator 1 view .LVU810
  2922 004c 0123     		movs	r3, #1
  2923 004e 84F84430 		strb	r3, [r4, #68]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 113
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 113
 
 
  2924              	.L223:
@@ -6778,7 +6778,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  2971              		.cfi_def_cfa_offset 8
  2972              		.cfi_offset 4, -8
  2973              		.cfi_offset 14, -4
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 114
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 114
 
 
  2974 0002 0446     		mov	r4, r0
@@ -6838,7 +6838,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3015              		.loc 1 1203 3 view .LVU832
  3016 003c 0422     		movs	r2, #4
  3017 003e 0146     		mov	r1, r0
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 115
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 115
 
 
  3018              	.LVL189:
@@ -6898,7 +6898,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3060 0086 1A68     		ldr	r2, [r3]
  3061 0088 42F00102 		orr	r2, r2, #1
  3062 008c 1A60     		str	r2, [r3]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 116
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 116
 
 
 1223:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
@@ -6958,7 +6958,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3106 00ca 07D0     		beq	.L251
 1170:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3107              		.loc 1 1170 3 discriminator 7 view .LVU856
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 117
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 117
 
 
  3108 00cc 0223     		movs	r3, #2
@@ -7018,7 +7018,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3151 010a 094A     		ldr	r2, .L252+4
  3152 010c 0A40     		ands	r2, r2, r1
  3153              	.LVL194:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 118
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 118
 
 
 1212:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****     {
@@ -7078,7 +7078,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3201              		.cfi_startproc
  3202              		@ args = 0, pretend = 0, frame = 0
  3203              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 119
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 119
 
 
 1238:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   uint32_t tmpccer;
@@ -7138,7 +7138,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3245              		.loc 1 1278 5 is_stmt 1 view .LVU889
  3246 0028 DA68     		ldr	r2, [r3, #12]
  3247 002a 22F08002 		bic	r2, r2, #128
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 120
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 120
 
 
  3248 002e DA60     		str	r2, [r3, #12]
@@ -7198,7 +7198,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1288:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3290              		.loc 1 1288 3 is_stmt 0 discriminator 1 view .LVU902
  3291 006e 0123     		movs	r3, #1
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 121
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 121
 
 
  3292 0070 85F84430 		strb	r3, [r5, #68]
@@ -7258,7 +7258,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3335              	.L267:
 1288:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3336              		.loc 1 1288 3 discriminator 3 view .LVU914
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 122
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 122
 
 
  3337 00ac 0123     		movs	r3, #1
@@ -7318,7 +7318,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1315:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  3384              		.loc 1 1315 46 discriminator 1 view .LVU924
  3385 0012 0228     		cmp	r0, #2
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 123
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 123
 
 
  3386 0014 14BF     		ite	ne
@@ -7378,7 +7378,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1335:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  3428              		.loc 1 1335 3 is_stmt 1 view .LVU937
  3429 0054 042D     		cmp	r5, #4
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 124
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 124
 
 
  3430 0056 00F09580 		beq	.L283
@@ -7438,7 +7438,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3474 00b0 A2F56C42 		sub	r2, r2, #60416
  3475 00b4 9342     		cmp	r3, r2
  3476 00b6 00F09280 		beq	.L286
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 125
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 125
 
 
 1418:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
@@ -7498,7 +7498,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3520              	.LVL217:
 1315:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  3521              		.loc 1 1315 7 discriminator 7 view .LVU959
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 126
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 126
 
 
  3522 00f2 C0B2     		uxtb	r0, r0
@@ -7558,7 +7558,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3565              		.loc 1 1319 12 discriminator 7 view .LVU970
  3566 012a D2B2     		uxtb	r2, r2
 1319:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 127
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 127
 
 
  3567              		.loc 1 1319 51 discriminator 7 view .LVU971
@@ -7618,7 +7618,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1344:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3609              		.loc 1 1344 7 is_stmt 1 view .LVU984
 1344:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 128
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 128
 
 
  3610              		.loc 1 1344 17 is_stmt 0 view .LVU985
@@ -7678,7 +7678,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1364:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3650              		.loc 1 1364 7 is_stmt 1 view .LVU1000
 1364:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 129
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 129
 
 
  3651              		.loc 1 1364 17 is_stmt 0 view .LVU1001
@@ -7738,7 +7738,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1384:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3691              		.loc 1 1384 7 is_stmt 1 view .LVU1016
 1384:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 130
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 130
 
 
  3692              		.loc 1 1384 17 is_stmt 0 view .LVU1017
@@ -7798,7 +7798,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3732              		.loc 1 1413 7 is_stmt 0 view .LVU1031
  3733 01f0 42F00102 		orr	r2, r2, #1
  3734 01f4 1A60     		str	r2, [r3]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 131
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 131
 
 
 1422:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
@@ -7858,7 +7858,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3780 0224 00000000 		.word	TIM_DMAErrorCCxN
  3781 0228 07000100 		.word	65543
  3782              		.cfi_endproc
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 132
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 132
 
 
  3783              	.LFE164:
@@ -7918,7 +7918,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3831              		.loc 1 1475 3 discriminator 1 view .LVU1048
  3832 0026 196A     		ldr	r1, [r3, #32]
  3833 0028 40F24442 		movw	r2, #1092
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 133
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 133
 
 
  3834 002c 1142     		tst	r1, r2
@@ -7978,7 +7978,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3876 006a D360     		str	r3, [r2, #12]
 1447:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
  3877              		.loc 1 1447 7 view .LVU1061
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 134
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 134
 
 
 1447:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
@@ -8038,7 +8038,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1481:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  3919              		.loc 1 1481 3 is_stmt 0 discriminator 2 view .LVU1075
  3920 0098 042C     		cmp	r4, #4
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 135
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 135
 
 
  3921 009a 05D0     		beq	.L317
@@ -8098,7 +8098,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  3969 0008 0425     		movs	r5, #4
  3970              	.L320:
  3971              	.LVL252:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 136
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 136
 
 
 1524:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_2_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_2);
@@ -8158,7 +8158,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4011 0038 EBB9     		cbnz	r3, .L324
 1542:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CHANNEL_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_BUSY);
  4012              		.loc 1 1542 3 is_stmt 1 view .LVU1099
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 137
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 137
 
 
  4013 003a 0223     		movs	r3, #2
@@ -8218,7 +8218,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1538:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
  4055              		.loc 1 1538 12 view .LVU1112
  4056 0072 0120     		movs	r0, #1
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 138
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 138
 
 
  4057              	.LVL267:
@@ -8278,7 +8278,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4104 000c 2068     		ldr	r0, [r4]
  4105              	.LVL272:
 1578:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CCxChannelCmd(htim->Instance, input_channel, TIM_CCx_DISABLE);
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 139
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 139
 
 
  4106              		.loc 1 1578 3 is_stmt 0 discriminator 4 view .LVU1122
@@ -8338,7 +8338,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1585:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4150              		.loc 1 1585 3 discriminator 5 view .LVU1133
 1588:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   TIM_CHANNEL_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 140
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 140
 
 
  4151              		.loc 1 1588 3 discriminator 5 view .LVU1134
@@ -8398,7 +8398,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4197 0004 8E46     		mov	lr, r1
  4198 0006 0029     		cmp	r1, #0
  4199 0008 3CD1     		bne	.L335
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 141
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 141
 
 
  4200 000a 0425     		movs	r5, #4
@@ -8458,7 +8458,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4239              		.loc 1 1624 7 view .LVU1159
  4240 0034 BCF1010F 		cmp	ip, #1
  4241 0038 28D1     		bne	.L337
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 142
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 142
 
 
  4242 003a 3BBB     		cbnz	r3, .L337
@@ -8518,7 +8518,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4284 007e 5364     		str	r3, [r2, #68]
 1649:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
  4285              		.loc 1 1649 3 view .LVU1172
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 143
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 143
 
 
 1649:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** }
@@ -8578,7 +8578,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4334 0002 0446     		mov	r4, r0
 1666:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4335              		.loc 1 1666 3 is_stmt 1 view .LVU1181
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 144
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 144
 
 
 1666:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -8638,7 +8638,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4379 0046 5A6C     		ldr	r2, [r3, #68]
  4380 0048 22F40042 		bic	r2, r2, #32768
  4381 004c 5A64     		str	r2, [r3, #68]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 145
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 145
 
 
  4382              	.L341:
@@ -8698,7 +8698,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4424              		.align	1
  4425              		.global	HAL_TIMEx_ConfigCommutEvent
  4426              		.syntax unified
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 146
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 146
 
 
  4427              		.thumb
@@ -8758,7 +8758,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1758:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  4470              		.loc 1 1758 56 view .LVU1218
  4471 0026 194B     		ldr	r3, .L355
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 147
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 147
 
 
  4472 0028 9942     		cmp	r1, r3
@@ -8818,7 +8818,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4512 005c 4B60     		str	r3, [r1, #4]
 1769:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4513              		.loc 1 1769 3 is_stmt 1 view .LVU1233
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 148
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 148
 
 
 1769:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -8878,7 +8878,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4555              	.L356:
  4556 008a 00BF     		.align	2
  4557              	.L355:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 149
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 149
 
 
  4558 008c 10002000 		.word	2097168
@@ -8938,7 +8938,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4603 001a 14BF     		ite	ne
  4604 001c 0023     		movne	r3, #0
  4605 001e 0123     		moveq	r3, #1
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 150
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 150
 
 
 1816:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       (InputTrigger == TIM_TS_ITR12)  || (InputTrigger == TIM_TS_ITR13))
@@ -8998,7 +8998,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4646              		.loc 1 1827 3 is_stmt 1 view .LVU1271
 1827:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   htim->Instance->CR2 |= CommutationSource;
  4647              		.loc 1 1827 7 is_stmt 0 view .LVU1272
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 151
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 151
 
 
  4648 0054 0168     		ldr	r1, [r0]
@@ -9058,7 +9058,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4689              	.L362:
 1813:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4690              		.loc 1 1813 3 view .LVU1286
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 152
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 152
 
 
  4691 0086 0220     		movs	r0, #2
@@ -9118,7 +9118,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4736              		.loc 1 1878 6 is_stmt 0 discriminator 2 view .LVU1297
  4737 0010 1029     		cmp	r1, #16
  4738 0012 18BF     		it	ne
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 153
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 153
 
 
  4739 0014 0029     		cmpne	r1, #0
@@ -9178,7 +9178,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4780              		.loc 1 1888 7 is_stmt 0 view .LVU1310
  4781 004a 0168     		ldr	r1, [r0]
 1888:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Select the Commutation event source */
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 154
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 154
 
 
  4782              		.loc 1 1888 23 view .LVU1311
@@ -9238,7 +9238,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1901:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4820              		.loc 1 1901 3 is_stmt 1 view .LVU1328
  4821 0078 0268     		ldr	r2, [r0]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 155
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 155
 
 
  4822 007a D368     		ldr	r3, [r2, #12]
@@ -9298,7 +9298,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  4868              		.thumb
  4869              		.thumb_func
  4871              	HAL_TIMEx_MasterConfigSynchronization:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 156
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 156
 
 
  4872              	.LVL319:
@@ -9358,7 +9358,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1940:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4910              		.loc 1 1940 3 is_stmt 1 discriminator 2 view .LVU1354
 1940:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 157
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 157
 
 
  4911              		.loc 1 1940 11 is_stmt 0 discriminator 2 view .LVU1355
@@ -9418,7 +9418,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1962:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
  4949              		.loc 1 1962 6 view .LVU1372
  4950 003c 144A     		ldr	r2, .L391
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 158
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 158
 
 
  4951              	.LVL326:
@@ -9478,7 +9478,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1974:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  4992              		.loc 1 1974 3 is_stmt 1 view .LVU1386
 1974:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 159
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 159
 
 
  4993              		.loc 1 1974 15 is_stmt 0 view .LVU1387
@@ -9538,7 +9538,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 1994:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Keep this variable initialized to 0 as it is used to configure BDTR register */
  5040              		.loc 1 1994 1 is_stmt 1 view -0
  5041              		.cfi_startproc
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 160
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 160
 
 
  5042              		@ args = 0, pretend = 0, frame = 0
@@ -9598,7 +9598,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5078 0018 1343     		orrs	r3, r3, r2
  5079              	.LVL336:
 2018:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   MODIFY_REG(tmpbdtr, TIM_BDTR_OSSR, sBreakDeadTimeConfig->OffStateRunMode);
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 161
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 161
 
 
  5080              		.loc 1 2018 3 is_stmt 1 discriminator 2 view .LVU1416
@@ -9658,7 +9658,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5121              	.LVL350:
 2022:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   MODIFY_REG(tmpbdtr, TIM_BDTR_BKF, (sBreakDeadTimeConfig->BreakFilter << TIM_BDTR_BKF_Pos));
  5122              		.loc 1 2022 3 discriminator 2 view .LVU1430
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 162
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 162
 
 
  5123 0040 1343     		orrs	r3, r3, r2
@@ -9718,7 +9718,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2035:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   }
  5163              		.loc 1 2035 5 is_stmt 1 view .LVU1445
  5164 006c 23F00073 		bic	r3, r3, #33554432
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 163
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 163
 
 
  5165              	.LVL360:
@@ -9778,7 +9778,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5206 008c 00040140 		.word	1073808384
  5207              		.cfi_endproc
  5208              	.LFE174:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 164
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 164
 
 
  5210              		.section	.text.HAL_TIMEx_ConfigBreakInput,"ax",%progbits
@@ -9838,7 +9838,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5249              		.loc 1 2079 3 is_stmt 1 discriminator 2 view .LVU1474
  5250 000a 0123     		movs	r3, #1
  5251 000c 80F83C30 		strb	r3, [r0, #60]
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 165
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 165
 
 
 2079:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -9898,7 +9898,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5292 003a 4FF4006E 		mov	lr, #2048
  5293              	.LVL370:
  5294              	.L409:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 166
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 166
 
 
 2126:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   {
@@ -9958,7 +9958,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2118:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       bkin_polarity_mask = 0U;
  5332              		.loc 1 2118 7 is_stmt 1 view .LVU1506
 2119:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       bkin_enable_bitpos = 0U;
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 167
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 167
 
 
  5333              		.loc 1 2119 7 view .LVU1507
@@ -10018,7 +10018,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5369 007c 5768     		ldr	r7, [r2, #4]
  5370 007e 07FA03F3 		lsl	r3, r7, r3
  5371              	.LVL378:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 168
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 168
 
 
 2135:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -10078,7 +10078,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5410 00a4 6F6E     		ldr	r7, [r5, #100]
  5411              	.LVL386:
 2154:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       tmporx |= (sBreakInputConfig->Enable << bkin_enable_bitpos) & bkin_enable_mask;
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 169
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 169
 
 
  5412              		.loc 1 2154 7 is_stmt 1 view .LVU1542
@@ -10138,7 +10138,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5450              		.loc 1 2166 7 is_stmt 1 view .LVU1558
  5451 00ca BCE7     		b	.L413
  5452              	.LVL395:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 170
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 170
 
 
  5453              	.L416:
@@ -10198,7 +10198,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5499 0016 1943     		orrs	r1, r1, r3
  5500              	.LVL398:
 2247:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 171
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 171
 
 
  5501              		.loc 1 2247 3 is_stmt 0 discriminator 2 view .LVU1569
@@ -10258,7 +10258,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5544              		.loc 1 2339 3 view .LVU1582
 2341:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  5545              		.loc 1 2341 3 view .LVU1583
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 172
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 172
 
 
 2341:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
@@ -10318,7 +10318,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5589              		.loc 1 2347 7 view .LVU1594
  5590 0034 18E0     		b	.L427
  5591              	.LVL407:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 173
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 173
 
 
  5592              	.L431:
@@ -10378,7 +10378,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5632 005a 22F07062 		bic	r2, r2, #251658240
  5633 005e 1143     		orrs	r1, r1, r2
  5634              	.LVL415:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 174
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 174
 
 
 2355:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****       break;
@@ -10438,7 +10438,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5678              		@ frame_needed = 0, uses_anonymous_args = 0
  5679              		@ link register save eliminated.
 2381:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   assert_param(IS_TIM_GROUPCH5(Channels));
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 175
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 175
 
 
  5680              		.loc 1 2381 3 view .LVU1622
@@ -10498,7 +10498,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5717              		.loc 1 2396 15 is_stmt 0 discriminator 2 view .LVU1639
  5718 0028 80F83D20 		strb	r2, [r0, #61]
 2398:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 176
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 176
 
 
  5719              		.loc 1 2398 3 is_stmt 1 discriminator 2 view .LVU1640
@@ -10558,7 +10558,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5766              		.align	1
  5767              		.global	TIMEx_DMACommutationCplt
  5768              		.syntax unified
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 177
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 177
 
 
  5769              		.thumb
@@ -10618,7 +10618,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5816              		.loc 1 2445 3 view .LVU1660
 2450:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c **** 
  5817              		.loc 1 2450 1 is_stmt 0 view .LVU1661
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 178
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 178
 
 
  5818 0000 7047     		bx	lr
@@ -10678,7 +10678,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
 2458:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c ****   /* Prevent unused argument(s) compilation warning */
  5868              		.loc 1 2458 1 is_stmt 1 view -0
  5869              		.cfi_startproc
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 179
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 179
 
 
  5870              		@ args = 0, pretend = 0, frame = 0
@@ -10738,7 +10738,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5919              		.loc 1 2508 1 view .LVU1679
  5920 0004 7047     		bx	lr
  5921              		.cfi_endproc
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 180
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 180
 
 
  5922              	.LFE183:
@@ -10798,7 +10798,7 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5965              		.loc 1 2530 1 is_stmt 0 discriminator 8 view .LVU1692
  5966 0018 7047     		bx	lr
  5967              	.LVL441:
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 181
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 181
 
 
  5968              	.L456:
@@ -10832,127 +10832,127 @@ ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 1
  5993              		.file 7 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h"
  5994              		.file 8 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h"
  5995              		.file 9 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h"
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 182
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 182
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32h7xx_hal_tim_ex.c
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:19     .text.TIM_CCxNChannelCmd:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:24     .text.TIM_CCxNChannelCmd:0000000000000000 TIM_CCxNChannelCmd
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:61     .text.TIM_DMAErrorCCxN:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:66     .text.TIM_DMAErrorCCxN:0000000000000000 TIM_DMAErrorCCxN
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:146    .text.TIM_DMADelayPulseNCplt:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:151    .text.TIM_DMADelayPulseNCplt:0000000000000000 TIM_DMADelayPulseNCplt
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:271    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:277    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 HAL_TIMEx_HallSensor_MspInit
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:292    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:298    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 HAL_TIMEx_HallSensor_Init
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:505    .text.HAL_TIMEx_HallSensor_Init:00000000000000d4 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:511    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:517    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 HAL_TIMEx_HallSensor_MspDeInit
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:532    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:538    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 HAL_TIMEx_HallSensor_DeInit
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:608    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:614    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 HAL_TIMEx_HallSensor_Start
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:771    .text.HAL_TIMEx_HallSensor_Start:00000000000000b8 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:777    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:783    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 HAL_TIMEx_HallSensor_Stop
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:842    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:848    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 HAL_TIMEx_HallSensor_Start_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1010   .text.HAL_TIMEx_HallSensor_Start_IT:00000000000000c4 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1016   .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1022   .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 HAL_TIMEx_HallSensor_Stop_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1086   .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1092   .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 HAL_TIMEx_HallSensor_Start_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1283   .text.HAL_TIMEx_HallSensor_Start_DMA:00000000000000e4 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1292   .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1298   .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 HAL_TIMEx_HallSensor_Stop_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1363   .text.HAL_TIMEx_OCN_Start:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1369   .text.HAL_TIMEx_OCN_Start:0000000000000000 HAL_TIMEx_OCN_Start
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1556   .text.HAL_TIMEx_OCN_Start:00000000000000f0 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1562   .text.HAL_TIMEx_OCN_Stop:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1568   .text.HAL_TIMEx_OCN_Stop:0000000000000000 HAL_TIMEx_OCN_Stop
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1665   .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1671   .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 HAL_TIMEx_OCN_Start_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1895   .text.HAL_TIMEx_OCN_Start_IT:000000000000012c $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1901   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:1907   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 HAL_TIMEx_OCN_Stop_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2059   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2065   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 HAL_TIMEx_OCN_Start_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2487   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000218 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2496   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2502   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 HAL_TIMEx_OCN_Stop_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2653   .text.HAL_TIMEx_PWMN_Start:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2659   .text.HAL_TIMEx_PWMN_Start:0000000000000000 HAL_TIMEx_PWMN_Start
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2846   .text.HAL_TIMEx_PWMN_Start:00000000000000f0 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2852   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2858   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 HAL_TIMEx_PWMN_Stop
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2955   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:2961   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 HAL_TIMEx_PWMN_Start_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3185   .text.HAL_TIMEx_PWMN_Start_IT:000000000000012c $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3191   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3197   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 HAL_TIMEx_PWMN_Stop_IT
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 183
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:19     .text.TIM_CCxNChannelCmd:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:24     .text.TIM_CCxNChannelCmd:0000000000000000 TIM_CCxNChannelCmd
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:61     .text.TIM_DMAErrorCCxN:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:66     .text.TIM_DMAErrorCCxN:0000000000000000 TIM_DMAErrorCCxN
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:146    .text.TIM_DMADelayPulseNCplt:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:151    .text.TIM_DMADelayPulseNCplt:0000000000000000 TIM_DMADelayPulseNCplt
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:271    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:277    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 HAL_TIMEx_HallSensor_MspInit
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:292    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:298    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 HAL_TIMEx_HallSensor_Init
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:505    .text.HAL_TIMEx_HallSensor_Init:00000000000000d4 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:511    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:517    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 HAL_TIMEx_HallSensor_MspDeInit
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:532    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:538    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 HAL_TIMEx_HallSensor_DeInit
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:608    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:614    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 HAL_TIMEx_HallSensor_Start
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:771    .text.HAL_TIMEx_HallSensor_Start:00000000000000b8 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:777    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:783    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 HAL_TIMEx_HallSensor_Stop
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:842    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:848    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 HAL_TIMEx_HallSensor_Start_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1010   .text.HAL_TIMEx_HallSensor_Start_IT:00000000000000c4 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1016   .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1022   .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 HAL_TIMEx_HallSensor_Stop_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1086   .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1092   .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 HAL_TIMEx_HallSensor_Start_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1283   .text.HAL_TIMEx_HallSensor_Start_DMA:00000000000000e4 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1292   .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1298   .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 HAL_TIMEx_HallSensor_Stop_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1363   .text.HAL_TIMEx_OCN_Start:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1369   .text.HAL_TIMEx_OCN_Start:0000000000000000 HAL_TIMEx_OCN_Start
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1556   .text.HAL_TIMEx_OCN_Start:00000000000000f0 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1562   .text.HAL_TIMEx_OCN_Stop:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1568   .text.HAL_TIMEx_OCN_Stop:0000000000000000 HAL_TIMEx_OCN_Stop
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1665   .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1671   .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 HAL_TIMEx_OCN_Start_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1895   .text.HAL_TIMEx_OCN_Start_IT:000000000000012c $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1901   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:1907   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 HAL_TIMEx_OCN_Stop_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2059   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2065   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 HAL_TIMEx_OCN_Start_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2487   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000218 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2496   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2502   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 HAL_TIMEx_OCN_Stop_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2653   .text.HAL_TIMEx_PWMN_Start:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2659   .text.HAL_TIMEx_PWMN_Start:0000000000000000 HAL_TIMEx_PWMN_Start
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2846   .text.HAL_TIMEx_PWMN_Start:00000000000000f0 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2852   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2858   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 HAL_TIMEx_PWMN_Stop
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2955   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:2961   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 HAL_TIMEx_PWMN_Start_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3185   .text.HAL_TIMEx_PWMN_Start_IT:000000000000012c $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3191   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3197   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 HAL_TIMEx_PWMN_Stop_IT
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 183
 
 
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3349   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3355   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 HAL_TIMEx_PWMN_Start_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3777   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000218 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3786   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3792   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 HAL_TIMEx_PWMN_Stop_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3943   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:3949   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 HAL_TIMEx_OnePulseN_Start
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4072   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4078   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 HAL_TIMEx_OnePulseN_Stop
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4173   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4179   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 HAL_TIMEx_OnePulseN_Start_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4313   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4319   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 HAL_TIMEx_OnePulseN_Stop_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4424   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4430   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 HAL_TIMEx_ConfigCommutEvent
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4558   .text.HAL_TIMEx_ConfigCommutEvent:000000000000008c $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4564   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4570   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 HAL_TIMEx_ConfigCommutEvent_IT
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4698   .text.HAL_TIMEx_ConfigCommutEvent_IT:000000000000008c $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4704   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4710   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 HAL_TIMEx_ConfigCommutEvent_DMA
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4856   .text.HAL_TIMEx_ConfigCommutEvent_DMA:000000000000009c $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5772   .text.TIMEx_DMACommutationCplt:0000000000000000 TIMEx_DMACommutationCplt
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5829   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 TIMEx_DMACommutationHalfCplt
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4865   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:4871   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 HAL_TIMEx_MasterConfigSynchronization
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5025   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000090 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5031   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5037   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 HAL_TIMEx_ConfigBreakDeadTime
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5205   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000088 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5211   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5217   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 HAL_TIMEx_ConfigBreakInput
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5262   .text.HAL_TIMEx_ConfigBreakInput:000000000000001c $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5270   .text.HAL_TIMEx_ConfigBreakInput:0000000000000024 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5470   .text.HAL_TIMEx_RemapConfig:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5476   .text.HAL_TIMEx_RemapConfig:0000000000000000 HAL_TIMEx_RemapConfig
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5525   .text.HAL_TIMEx_TISelection:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5531   .text.HAL_TIMEx_TISelection:0000000000000000 HAL_TIMEx_TISelection
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5561   .text.HAL_TIMEx_TISelection:0000000000000018 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5666   .text.HAL_TIMEx_GroupChannel5:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5672   .text.HAL_TIMEx_GroupChannel5:0000000000000000 HAL_TIMEx_GroupChannel5
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5745   .text.HAL_TIMEx_CommutCallback:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5751   .text.HAL_TIMEx_CommutCallback:0000000000000000 HAL_TIMEx_CommutCallback
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5766   .text.TIMEx_DMACommutationCplt:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5802   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5808   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 HAL_TIMEx_CommutHalfCpltCallback
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5823   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5859   .text.HAL_TIMEx_BreakCallback:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5865   .text.HAL_TIMEx_BreakCallback:0000000000000000 HAL_TIMEx_BreakCallback
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5880   .text.HAL_TIMEx_Break2Callback:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5886   .text.HAL_TIMEx_Break2Callback:0000000000000000 HAL_TIMEx_Break2Callback
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5901   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5907   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 HAL_TIMEx_HallSensor_GetState
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5925   .text.HAL_TIMEx_GetChannelNState:0000000000000000 $t
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5931   .text.HAL_TIMEx_GetChannelNState:0000000000000000 HAL_TIMEx_GetChannelNState
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5574   .text.HAL_TIMEx_TISelection:0000000000000025 $d
-/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s:5574   .text.HAL_TIMEx_TISelection:0000000000000026 $t
-ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccMgwF3L.s 			page 184
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3349   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3355   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 HAL_TIMEx_PWMN_Start_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3777   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000218 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3786   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3792   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 HAL_TIMEx_PWMN_Stop_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3943   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:3949   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 HAL_TIMEx_OnePulseN_Start
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4072   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4078   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 HAL_TIMEx_OnePulseN_Stop
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4173   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4179   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 HAL_TIMEx_OnePulseN_Start_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4313   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4319   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 HAL_TIMEx_OnePulseN_Stop_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4424   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4430   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 HAL_TIMEx_ConfigCommutEvent
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4558   .text.HAL_TIMEx_ConfigCommutEvent:000000000000008c $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4564   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4570   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 HAL_TIMEx_ConfigCommutEvent_IT
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4698   .text.HAL_TIMEx_ConfigCommutEvent_IT:000000000000008c $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4704   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4710   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 HAL_TIMEx_ConfigCommutEvent_DMA
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4856   .text.HAL_TIMEx_ConfigCommutEvent_DMA:000000000000009c $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5772   .text.TIMEx_DMACommutationCplt:0000000000000000 TIMEx_DMACommutationCplt
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5829   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 TIMEx_DMACommutationHalfCplt
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4865   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:4871   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 HAL_TIMEx_MasterConfigSynchronization
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5025   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000090 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5031   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5037   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 HAL_TIMEx_ConfigBreakDeadTime
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5205   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000088 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5211   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5217   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 HAL_TIMEx_ConfigBreakInput
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5262   .text.HAL_TIMEx_ConfigBreakInput:000000000000001c $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5270   .text.HAL_TIMEx_ConfigBreakInput:0000000000000024 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5470   .text.HAL_TIMEx_RemapConfig:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5476   .text.HAL_TIMEx_RemapConfig:0000000000000000 HAL_TIMEx_RemapConfig
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5525   .text.HAL_TIMEx_TISelection:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5531   .text.HAL_TIMEx_TISelection:0000000000000000 HAL_TIMEx_TISelection
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5561   .text.HAL_TIMEx_TISelection:0000000000000018 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5666   .text.HAL_TIMEx_GroupChannel5:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5672   .text.HAL_TIMEx_GroupChannel5:0000000000000000 HAL_TIMEx_GroupChannel5
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5745   .text.HAL_TIMEx_CommutCallback:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5751   .text.HAL_TIMEx_CommutCallback:0000000000000000 HAL_TIMEx_CommutCallback
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5766   .text.TIMEx_DMACommutationCplt:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5802   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5808   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 HAL_TIMEx_CommutHalfCpltCallback
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5823   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5859   .text.HAL_TIMEx_BreakCallback:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5865   .text.HAL_TIMEx_BreakCallback:0000000000000000 HAL_TIMEx_BreakCallback
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5880   .text.HAL_TIMEx_Break2Callback:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5886   .text.HAL_TIMEx_Break2Callback:0000000000000000 HAL_TIMEx_Break2Callback
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5901   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5907   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 HAL_TIMEx_HallSensor_GetState
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5925   .text.HAL_TIMEx_GetChannelNState:0000000000000000 $t
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5931   .text.HAL_TIMEx_GetChannelNState:0000000000000000 HAL_TIMEx_GetChannelNState
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5574   .text.HAL_TIMEx_TISelection:0000000000000025 $d
+/var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s:5574   .text.HAL_TIMEx_TISelection:0000000000000026 $t
+ARM GAS  /var/folders/26/q55yrwgs1ql1lprjdslmzz800000gn/T//ccBj6UOa.s 			page 184
 
 
 
