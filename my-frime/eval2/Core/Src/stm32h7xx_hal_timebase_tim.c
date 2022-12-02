@@ -95,11 +95,11 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
   htim6.Init.ClockDivision = 0;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
 
-  if(HAL_TIM_Base_Init(&htim6) == HAL_OK)
-  {
-    /* Start the TIM time Base generation in interrupt mode */
-    return HAL_TIM_Base_Start_IT(&htim6);
-  }
+//  if(HAL_TIM_Base_Init(&htim6) == HAL_OK)
+//  {
+//    /* Start the TIM time Base generation in interrupt mode */
+//    return HAL_TIM_Base_Start_IT(&htim6);
+//  }
 
   /* Return function status */
   return HAL_ERROR;
