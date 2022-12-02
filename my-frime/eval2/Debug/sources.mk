@@ -23,6 +23,10 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/arm \
+Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/gcc \
+Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/iar \
+Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates \
 Drivers/STM32H7xx_HAL_Driver/Src \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
 Middlewares/Third_Party/FreeRTOS/Source \
