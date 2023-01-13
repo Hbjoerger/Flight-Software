@@ -1,0 +1,2 @@
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Drv/LinuxSpiDriver/Events.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Drv/LinuxSpiDriver/Telemetry.fppi

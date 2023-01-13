@@ -1,0 +1,10 @@
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Cmd/Cmd.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Com/Com.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Log/Log.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Tlm/Tlm.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/CmdSequencer/Commands.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/CmdSequencer/Events.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/CmdSequencer/Telemetry.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/Ping/Ping.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/Sched/Sched.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/Seq/Seq.fpp

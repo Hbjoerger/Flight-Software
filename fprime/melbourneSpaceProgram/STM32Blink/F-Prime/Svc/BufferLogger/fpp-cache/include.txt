@@ -1,0 +1,3 @@
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/BufferLogger/Commands.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/BufferLogger/Events.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/BufferLogger/Telemetry.fppi

@@ -1,0 +1,7 @@
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Cmd/Cmd.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Log/Log.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Tlm/Tlm.fpp
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/FileManager/Commands.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/FileManager/Events.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/FileManager/Telemetry.fppi
+/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/Ping/Ping.fpp
