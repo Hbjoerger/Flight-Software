@@ -16,7 +16,7 @@
 5. `fprime-util build FreeRTOS-stm`
 
 ### Flashing build (in terminal outside vscode)
-1. install stlink-tools
+1. install stlink-tools ('brew install stlink works' on mac
 2. `cd Ref/build-artifcats/FreeRTOS-stm/bin`
 3. connect board to usb
 4. `st-info --probe` to validate connection
