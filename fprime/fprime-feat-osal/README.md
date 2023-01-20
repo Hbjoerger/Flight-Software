@@ -15,8 +15,8 @@
 5. `fprime-util build FreeRTOS-stm`
 
 ### Flashing build
-2. copy build output from `Ref/build-artifcats/FreeRTOS-stm/bin/Ref`
-3. install stlink-tools
-4. connect board to usb
-5. `st-info --probe` to validate connection
-6. `st-flash write Ref 0x8000000`
+1. install stlink-tools
+2. `cd build-artifcats/FreeRTOS-stm/bin/Ref`
+3. connect board to usb
+4. `st-info --probe` to validate connection
+5. `st-flash write Ref 0x8000000`
