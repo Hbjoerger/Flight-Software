@@ -15,9 +15,9 @@
 4. `fprime-util generate FreeRTOS-stm`
 5. `fprime-util build FreeRTOS-stm`
 
-### Flashing build
+### Flashing build (in terminal outside vscode)
 1. install stlink-tools
-2. `cd build-artifcats/FreeRTOS-stm/bin/Ref`
+2. `cd Ref/build-artifcats/FreeRTOS-stm/bin`
 3. connect board to usb
 4. `st-info --probe` to validate connection
 5. `st-flash write Ref 0x8000000`
