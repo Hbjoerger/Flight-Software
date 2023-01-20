@@ -1,3 +1,0 @@
-ActiveLoggerComponentAi.xml
-ActiveLogger_EnabledEnumAi.xml
-ActiveLogger_FilterSeverityEnumAi.xml

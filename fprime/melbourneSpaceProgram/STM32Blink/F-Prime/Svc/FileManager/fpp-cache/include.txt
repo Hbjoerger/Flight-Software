@@ -1,3 +1,0 @@
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/FileManager/Commands.fppi
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/FileManager/Events.fppi
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/FileManager/Telemetry.fppi

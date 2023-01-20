@@ -1,4 +1,0 @@
-CmdPortAi.xml
-CmdRegPortAi.xml
-CmdResponseEnumAi.xml
-CmdResponsePortAi.xml

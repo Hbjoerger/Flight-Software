@@ -1,3 +1,0 @@
-SerialReadPortAi.xml
-SerialReadStatusEnumAi.xml
-SerialWritePortAi.xml

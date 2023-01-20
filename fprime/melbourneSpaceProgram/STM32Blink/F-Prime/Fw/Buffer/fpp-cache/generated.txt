@@ -1,2 +1,0 @@
-BufferGetPortAi.xml
-BufferSendPortAi.xml

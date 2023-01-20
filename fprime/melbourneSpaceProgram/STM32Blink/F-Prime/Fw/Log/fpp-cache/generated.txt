@@ -1,3 +1,0 @@
-LogPortAi.xml
-LogSeverityEnumAi.xml
-LogTextPortAi.xml

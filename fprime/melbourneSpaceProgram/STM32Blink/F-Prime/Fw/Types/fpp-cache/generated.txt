@@ -1,3 +1,0 @@
-DeserialStatusEnumAi.xml
-EnabledEnumAi.xml
-SerialStatusEnumAi.xml

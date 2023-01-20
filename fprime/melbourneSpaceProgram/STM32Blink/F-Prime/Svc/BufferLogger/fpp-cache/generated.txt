@@ -1,2 +1,0 @@
-BufferLoggerComponentAi.xml
-BufferLogger_LogStateEnumAi.xml

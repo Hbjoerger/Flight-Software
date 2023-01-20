@@ -1,2 +1,0 @@
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/ComLogger/Commands.fppi
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/ComLogger/Events.fppi

@@ -1,2 +1,0 @@
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Buffer/Buffer.fpp
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/config/AcConstants.fpp

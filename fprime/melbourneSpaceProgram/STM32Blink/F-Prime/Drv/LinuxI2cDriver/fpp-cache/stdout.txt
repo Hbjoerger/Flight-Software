@@ -1,2 +1,0 @@
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Fw/Buffer/Buffer.fpp

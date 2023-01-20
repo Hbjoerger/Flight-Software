@@ -1,3 +1,0 @@
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/CmdSequencer/Commands.fppi
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/CmdSequencer/Events.fppi
-/Users/jaredking/Desktop/work/melbourneSpaceProgramFPrime/Svc/CmdSequencer/Telemetry.fppi

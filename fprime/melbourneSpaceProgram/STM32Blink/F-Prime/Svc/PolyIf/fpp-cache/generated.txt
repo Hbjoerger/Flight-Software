@@ -1,2 +1,0 @@
-MeasurementStatusEnumAi.xml
-PolyPortAi.xml
