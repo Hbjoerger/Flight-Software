@@ -4,8 +4,8 @@
 1. Clone repo
 2. Have dockerhub open
 3. Open in vscode
-4. Install extentions on vscode named "Dev COntainers" and "Docker"
-5. Click on prompt to "reopen in container" (F1 --> Dev Containers: Reopen in Container)
+4. Install extentions on vscode named "Dev Containers" and "Docker"
+5. Click on prompt to "reopen in container" (F1 --> Dev Containers: Reopen in Container). If that does not work, click green in bottom left --> reopen in container.
 6. After it is opened in the container, select a kit on the blue bar on the bottom. “GCC 11.2.0 x86_64-linux-gnu" worked for me. click the play button on the blue bar to apply it.
 
 ### Compiling
