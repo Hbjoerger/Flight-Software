@@ -1102,6 +1102,8 @@ void StartDefaultTask(void *argument)
 	/* Infinite loop */
   for(;;)
   {
+	HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_4);
+	HAL_Delay (100);
 	HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
 	HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
 	uint16_t milliSec = 1000 - ((sTime.SubSeconds * 1000) / (sTime.SecondFraction));
