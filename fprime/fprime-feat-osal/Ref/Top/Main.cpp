@@ -41,32 +41,32 @@ void runcycles(NATIVE_INT_TYPE cycles) {
     }
 }
 
-int main(int argc, char* argv[]) {
+int fsw_main(int argc, char* argv[]) {
     U32 port_number = 0; // Invalid port number forced
-    I32 option;
+    // I32 option;
     char *hostname;
-    option = 0;
+    // option = 0;
     hostname = nullptr;
 
-    while ((option = getopt(argc, argv, "hp:a:")) != -1){
-        switch(option) {
-            case 'h':
-                print_usage(argv[0]);
-                return 0;
-                break;
-            case 'p':
-                port_number = static_cast<U32>(atoi(optarg));
-                break;
-            case 'a':
-                hostname = optarg;
-                break;
-            case '?':
-                return 1;
-            default:
-                print_usage(argv[0]);
-                return 1;
-        }
-    }
+    // while ((option = getopt(argc, argv, "hp:a:")) != -1){
+    //     switch(option) {
+    //         case 'h':
+    //             print_usage(argv[0]);
+    //             return 0;
+    //             break;
+    //         case 'p':
+    //             port_number = static_cast<U32>(atoi(optarg));
+    //             break;
+    //         case 'a':
+    //             hostname = optarg;
+    //             break;
+    //         case '?':
+    //             return 1;
+    //         default:
+    //             print_usage(argv[0]);
+    //             return 1;
+    //     }
+    // }
 
     (void) printf("Hit Ctrl-C to quit\n");
 
@@ -77,13 +77,13 @@ int main(int argc, char* argv[]) {
     signal(SIGINT,sighandler);
     signal(SIGTERM,sighandler);
 
-    int cycle = 0;
+    // int cycle = 0;
 
-    while (!terminate) {
-//        (void) printf("Cycle %d\n",cycle);
-        runcycles(1);
-        cycle++;
-    }
+//     while (!terminate) {
+// //        (void) printf("Cycle %d\n",cycle);
+//         runcycles(1);
+//         cycle++;
+//     }
 
     // Give time for threads to exit
     (void) printf("Waiting for threads...\n");

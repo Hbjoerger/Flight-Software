@@ -8,17 +8,18 @@ include_directories("${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/
 					)
 
 set(SOURCE_FILES
-	# "${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h"
-	# "${CMAKE_CURRENT_LIST_DIR}/Core/Src/gpio.c"
+	"${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h"#
 	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/freertos.c"
-	# "${CMAKE_CURRENT_LIST_DIR}/Core/Src/eth.c"
-	# "${CMAKE_CURRENT_LIST_DIR}/Core/Src/usart.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/main.c"
-	# "${CMAKE_CURRENT_LIST_DIR}/Core/Src/usb_otg.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/stm32h7xx_it.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/stm32h7xx_hal_msp.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/stm32h7xx_hal_timebase_tim.c"
-	# "${CMAKE_CURRENT_LIST_DIR}/Core/Inc/FreeRTOSConfig.h"
+
+	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/syscalls.c"#
+	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/sysmem.c"#
+	"${CMAKE_CURRENT_LIST_DIR}/Core/Src/system_stm32h7xx.c"#
+
+	"${CMAKE_CURRENT_LIST_DIR}/Core/Inc/FreeRTOSConfig.h"#
 	"${CMAKE_CURRENT_LIST_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c"
@@ -55,7 +56,7 @@ set(SOURCE_FILES
 	"${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c"
 	"${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c"
-	# "${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h"
+	"${CMAKE_CURRENT_LIST_DIR}/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h"
 )
 
 register_fprime_module()
