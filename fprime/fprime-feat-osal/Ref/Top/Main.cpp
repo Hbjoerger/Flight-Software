@@ -5,41 +5,41 @@
 #include <Os/Log.hpp>
 #include <Ref/Top/RefTopologyAc.hpp>
 
-void print_usage(const char* app) {
-    (void) printf("Usage: ./%s [options]\n-p\tport_number\n-a\thostname/IP address\n",app);
-}
+// void print_usage(const char* app) {
+//     (void) printf("Usage: ./%s [options]\n-p\tport_number\n-a\thostname/IP address\n",app);
+// }
 
 #include <signal.h>
 #include <cstdio>
 
 Ref::TopologyState state;
 // Enable the console logging provided by Os::Log
-Os::Log logger;
+// Os::Log logger;
 
-volatile sig_atomic_t terminate = 0;
+// volatile sig_atomic_t terminate = 0;
 
-static void sighandler(int signum) {
-    Ref::teardown(state);
-    terminate = 1;
-}
+// static void sighandler(int signum) {
+//     Ref::teardown(state);
+//     terminate = 1;
+// }
 
-void run1cycle() {
-    // call interrupt to emulate a clock
-    Ref::blockDrv.callIsr();
-    Os::Task::delay(1000); //10Hz
-}
+// void run1cycle() {
+//     // call interrupt to emulate a clock
+//     Ref::blockDrv.callIsr();
+//     Os::Task::delay(1000); //10Hz
+// }
 
-void runcycles(NATIVE_INT_TYPE cycles) {
-    if (cycles == -1) {
-        while (true) {
-            run1cycle();
-        }
-    }
+// void runcycles(NATIVE_INT_TYPE cycles) {
+//     if (cycles == -1) {
+//         while (true) {
+//             run1cycle();
+//         }
+//     }
 
-    for (NATIVE_INT_TYPE cycle = 0; cycle < cycles; cycle++) {
-        run1cycle();
-    }
-}
+//     for (NATIVE_INT_TYPE cycle = 0; cycle < cycles; cycle++) {
+//         run1cycle();
+//     }
+// }
 
 int fsw_main(int argc, char* argv[]) {
     U32 port_number = 0; // Invalid port number forced
@@ -74,8 +74,8 @@ int fsw_main(int argc, char* argv[]) {
     Ref::setup(state);
 
     // register signal handlers to exit program
-    signal(SIGINT,sighandler);
-    signal(SIGTERM,sighandler);
+    // signal(SIGINT,sighandler);
+    // signal(SIGTERM,sighandler);
 
     // int cycle = 0;
 
