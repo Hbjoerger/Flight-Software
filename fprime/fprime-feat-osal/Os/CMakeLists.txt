@@ -14,6 +14,7 @@ set(MOD_DEPS
   Fw/Logger
   Utils/Hash
 )
+
 # Basic source files used in every OSAL layer.  Contains common code and helpers.
 set(SOURCE_FILES
     "${CMAKE_CURRENT_LIST_DIR}/IntervalTimerCommon.cpp"

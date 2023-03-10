@@ -1,3 +1,4 @@
+message("Making Ref")
 ####
 # 'Ref' Deployment:
 #
@@ -30,7 +31,7 @@ project(Ref VERSION 1.0.0 LANGUAGES C CXX)
 # colliding with deployment specific items.
 ##
 include("${CMAKE_CURRENT_LIST_DIR}/../cmake/FPrime.cmake")
-# NOTE: register custom targets between these two lines
+# NOTE: register custom targets between these two lines f
 include("${CMAKE_CURRENT_LIST_DIR}/../cmake/FPrime-Code.cmake")
 ##
 # Section 3: Components and Topology

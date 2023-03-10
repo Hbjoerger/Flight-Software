@@ -1,3 +1,4 @@
+message("Making Ref/Top")
 ####
 # F prime CMakeLists.txt:
 #

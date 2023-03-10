@@ -28,6 +28,7 @@ add_compile_options(
 # Turn on pedantic checks for clang, but disable specific checks that F' doesn't comply with.
 # GCC doesn't support disabling specific pedantic checks, so skip pedantic on GCC for now.
 #
+
 # -Wno-unused-parameter: Disable the unused parameter warning for now. F' has a lot of interfaces,
 # so unused method parameters are common in the F prime code base. Eventually all intentionally
 # unused parameters should be annotated to avoid this error.

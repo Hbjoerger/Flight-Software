@@ -41,7 +41,7 @@ Ref::TopologyState state;
 //     }
 // }
 
-int fsw_main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     U32 port_number = 0; // Invalid port number forced
     // I32 option;
     char *hostname;

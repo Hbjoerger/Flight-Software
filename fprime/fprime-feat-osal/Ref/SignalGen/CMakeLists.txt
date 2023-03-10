@@ -1,3 +1,4 @@
+message("Making Ref/SignalGen")
 ####
 # F prime CMakeLists.txt:
 #
