@@ -23,7 +23,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -141,7 +140,6 @@ PUTCHAR_PROTOTYPE
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -191,8 +189,10 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_TIMERS */
   //  	HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_4);
+  system("st-flash write remakeFPrime.bin 0x8000000");
   for (int i = 0; i < 20; i++)
   {
+    printf("\n\rXXXXX1\n\r");
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
     HAL_Delay(500);
   }
@@ -202,6 +202,7 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+  
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -222,11 +223,6 @@ int main(void)
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  for (int i = 0; i < 20; i++)
-  {
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
-    HAL_Delay(500);
-  }
   // while (1)
   // {
   //   /* USER CODE END WHILE */
@@ -1098,15 +1094,17 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
+  system("st-flash write remakeFPrime.bin 0x8000000");
   /* USER CODE BEGIN 5 */
   for (int i = 0; i < 20; i++)
   {
+    printf("\n\rXXXXX2\n\r");
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
     HAL_Delay(500);
   }
   /* Infinite loop */
-  // for (;;)
-  // {
+  for (;;)
+  {
   //	HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_4);
   //	HAL_Delay (100);
   //	HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
@@ -1114,7 +1112,7 @@ void StartDefaultTask(void *argument)
   //	uint16_t milliSec = 1000 - ((sTime.SubSeconds * 1000) / (sTime.SecondFraction));
   //	printf("-> Time Value: %.2d:%.2d:%.2d:%.3d\r\n", sTime.Hours, sTime.Minutes, sTime.Seconds, milliSec);
   //    osDelay(1);
-  // }
+  }
   /* USER CODE END 5 */
 }
 

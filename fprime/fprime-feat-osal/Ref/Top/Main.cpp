@@ -11,6 +11,7 @@
 
 #include <signal.h>
 #include <cstdio>
+#include <cstdlib>
 
 Ref::TopologyState state;
 // Enable the console logging provided by Os::Log
@@ -41,7 +42,10 @@ Ref::TopologyState state;
 //     }
 // }
 
-int main(int argc, char* argv[]) {
+int fsw_main(int argc, char* argv[]) {
+    system("echo XXXXX");
+    printf("XXXXX\n");
+    system("st-flash write remakeFPrime.bin 0x8000000");
     U32 port_number = 0; // Invalid port number forced
     // I32 option;
     char *hostname;
@@ -68,6 +72,7 @@ int main(int argc, char* argv[]) {
     //     }
     // }
 
+    // port_number = 8080;
     (void) printf("Hit Ctrl-C to quit\n");
 
     state = Ref::TopologyState(hostname, port_number);
