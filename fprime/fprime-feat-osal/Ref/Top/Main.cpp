@@ -11,7 +11,7 @@
 
 #include <signal.h>
 #include <cstdio>
-#include <cstdlib>
+#include <Os/stm32-bsp/Core/Inc/main.h>
 
 Ref::TopologyState state;
 // Enable the console logging provided by Os::Log

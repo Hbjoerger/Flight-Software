@@ -137,7 +137,7 @@ PUTCHAR_PROTOTYPE
  * @brief  The application entry point.
  * @retval int
  */
-int main(void)
+int fsw_main(void)
 {
   /* USER CODE BEGIN 1 */
   /* USER CODE END 1 */
