@@ -279,7 +279,7 @@ typedef enum
   */
 
 #if defined (USE_HAL_DRIVER)
- #include "stm32h7xx_hal.h"
+ #include "Os/stm32-bsp/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h"
 #endif /* USE_HAL_DRIVER */
 
 

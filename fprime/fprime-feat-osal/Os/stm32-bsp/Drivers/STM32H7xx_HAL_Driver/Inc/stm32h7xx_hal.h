@@ -26,7 +26,7 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32h7xx_hal_conf.h"
+#include "Os/stm32-bsp/Core/Inc/stm32h7xx_hal_conf.h"
 
 /** @addtogroup STM32H7xx_HAL_Driver
   * @{

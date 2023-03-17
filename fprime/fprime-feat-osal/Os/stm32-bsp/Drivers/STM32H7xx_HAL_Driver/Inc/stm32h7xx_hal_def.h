@@ -26,8 +26,8 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32h7xx.h"
-#include "Legacy/stm32_hal_legacy.h"
+#include "Os/stm32-bsp/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h"
+#include "Os/stm32-bsp/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h"
 #include <stddef.h>
 #include <math.h>
 

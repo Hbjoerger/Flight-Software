@@ -27,13 +27,13 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32h7xx_hal.h"
+// #include "stm32h7xx_hal.h"
+#include "Os/stm32-bsp/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
-
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
