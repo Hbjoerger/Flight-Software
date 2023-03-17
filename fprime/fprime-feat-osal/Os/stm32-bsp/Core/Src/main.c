@@ -189,7 +189,7 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_TIMERS */
   //  	HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_4);
-  system("st-flash write remakeFPrime.bin 0x8000000");
+  // system("st-flash write remakeFPrime.bin 0x8000000");
   for (int i = 0; i < 20; i++)
   {
     printf("\n\rXXXXX1\n\r");
@@ -1094,7 +1094,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
-  system("st-flash write remakeFPrime.bin 0x8000000");
+  // system("st-flash write remakeFPrime.bin 0x8000000");
   /* USER CODE BEGIN 5 */
   for (int i = 0; i < 20; i++)
   {

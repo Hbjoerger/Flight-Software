@@ -42,9 +42,9 @@ Ref::TopologyState state;
 // }
 
 int fsw_main(int argc, char* argv[]) {
-    system("echo XXXXX");
+    // system("echo XXXXX");
     printf("XXXXX\n");
-    system("st-flash write remakeFPrime.bin 0x8000000");
+    // system("st-flash write remakeFPrime.bin 0x8000000");
     U32 port_number = 0; // Invalid port number forced
     // I32 option;
     char *hostname;
