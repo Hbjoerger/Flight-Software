@@ -12,6 +12,7 @@
 #include <signal.h>
 #include <cstdio>
 #include <Os/stm32-bsp/Core/Inc/main.h>
+int fsw_main(void);
 
 Ref::TopologyState state;
 // Enable the console logging provided by Os::Log
@@ -42,7 +43,8 @@ Ref::TopologyState state;
 //     }
 // }
 
-int fsw_main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
+    fsw_main();
     system("echo XXXXX");
     printf("XXXXX\n");
     system("st-flash write remakeFPrime.bin 0x8000000");
