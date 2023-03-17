@@ -2128,8 +2128,8 @@ __STATIC_INLINE void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGr
  */
 __STATIC_INLINE void __NVIC_SetVector(IRQn_Type IRQn, uint32_t vector)
 {
-  uint32_t vectors = (uint32_t )SCB->VTOR;
-  (* (int *) (vectors + ((int32_t)IRQn + NVIC_USER_IRQ_OFFSET) * 4)) = vector;
+  // uint32_t vectors = (uint32_t )SCB->VTOR;
+  // (* (int *) (vectors + ((int32_t)IRQn + NVIC_USER_IRQ_OFFSET) * 4)) = vector;
   __DSB();
 }
 
@@ -2142,11 +2142,11 @@ __STATIC_INLINE void __NVIC_SetVector(IRQn_Type IRQn, uint32_t vector)
   \param [in]   IRQn      Interrupt number.
   \return                 Address of interrupt handler function
  */
-__STATIC_INLINE uint32_t __NVIC_GetVector(IRQn_Type IRQn)
-{
-  uint32_t vectors = (uint32_t )SCB->VTOR;
-  return (uint32_t)(* (int *) (vectors + ((int32_t)IRQn + NVIC_USER_IRQ_OFFSET) * 4));
-}
+// __STATIC_INLINE uint32_t __NVIC_GetVector(IRQn_Type IRQn)
+// {
+//   uint32_t vectors = (uint32_t )SCB->VTOR;
+//   return (uint32_t)(* (int *) (vectors + ((int32_t)IRQn + NVIC_USER_IRQ_OFFSET) * 4));
+// }
 
 
 /**
@@ -2231,8 +2231,8 @@ __STATIC_INLINE uint32_t SCB_GetFPUType(void)
 #define CCSIDR_WAYS(x)         (((x) & SCB_CCSIDR_ASSOCIATIVITY_Msk) >> SCB_CCSIDR_ASSOCIATIVITY_Pos)
 #define CCSIDR_SETS(x)         (((x) & SCB_CCSIDR_NUMSETS_Msk      ) >> SCB_CCSIDR_NUMSETS_Pos      )
 
-#define __SCB_DCACHE_LINE_SIZE  32U /*!< Cortex-M7 cache line size is fixed to 32 bytes (8 words). See also register SCB_CCSIDR */
-#define __SCB_ICACHE_LINE_SIZE  32U /*!< Cortex-M7 cache line size is fixed to 32 bytes (8 words). See also register SCB_CCSIDR */
+// #define __SCB_DCACHE_LINE_SIZE  32U /*!< Cortex-M7 cache line size is fixed to 32 bytes (8 words). See also register SCB_CCSIDR */
+// #define __SCB_ICACHE_LINE_SIZE  32U /*!< Cortex-M7 cache line size is fixed to 32 bytes (8 words). See also register SCB_CCSIDR */
 
 /**
   \brief   Enable I-Cache
@@ -2299,21 +2299,21 @@ __STATIC_FORCEINLINE void SCB_InvalidateICache (void)
 __STATIC_FORCEINLINE void SCB_InvalidateICache_by_Addr (void *addr, int32_t isize)
 {
   #if defined (__ICACHE_PRESENT) && (__ICACHE_PRESENT == 1U)
-    if ( isize > 0 ) {
-       int32_t op_size = isize + (((uint32_t)addr) & (__SCB_ICACHE_LINE_SIZE - 1U));
-      uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_ICACHE_LINE_SIZE - 1U) */;
+    // if ( isize > 0 ) {
+    //    int32_t op_size = isize + (((uint32_t)addr) & (__SCB_ICACHE_LINE_SIZE - 1U));
+    //   uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_ICACHE_LINE_SIZE - 1U) */;
 
-      __DSB();
+    //   __DSB();
 
-      do {
-        SCB->ICIMVAU = op_addr;             /* register accepts only 32byte aligned values, only bits 31..5 are valid */
-        op_addr += __SCB_ICACHE_LINE_SIZE;
-        op_size -= __SCB_ICACHE_LINE_SIZE;
-      } while ( op_size > 0 );
+    //   do {
+    //     SCB->ICIMVAU = op_addr;             /* register accepts only 32byte aligned values, only bits 31..5 are valid */
+    //     op_addr += __SCB_ICACHE_LINE_SIZE;
+    //     op_size -= __SCB_ICACHE_LINE_SIZE;
+    //   } while ( op_size > 0 );
 
-      __DSB();
-      __ISB();
-    }
+    //   __DSB();
+    //   __ISB();
+    // }
   #endif
 }
 
@@ -2512,21 +2512,21 @@ __STATIC_FORCEINLINE void SCB_CleanInvalidateDCache (void)
 __STATIC_FORCEINLINE void SCB_InvalidateDCache_by_Addr (void *addr, int32_t dsize)
 {
   #if defined (__DCACHE_PRESENT) && (__DCACHE_PRESENT == 1U)
-    if ( dsize > 0 ) { 
-       int32_t op_size = dsize + (((uint32_t)addr) & (__SCB_DCACHE_LINE_SIZE - 1U));
-      uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_DCACHE_LINE_SIZE - 1U) */;
+    // if ( dsize > 0 ) { 
+    //    int32_t op_size = dsize + (((uint32_t)addr) & (__SCB_DCACHE_LINE_SIZE - 1U));
+    //   uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_DCACHE_LINE_SIZE - 1U) */;
     
-      __DSB();
+    //   __DSB();
 
-      do {
-        SCB->DCIMVAC = op_addr;             /* register accepts only 32byte aligned values, only bits 31..5 are valid */
-        op_addr += __SCB_DCACHE_LINE_SIZE;
-        op_size -= __SCB_DCACHE_LINE_SIZE;
-      } while ( op_size > 0 );
+    //   do {
+    //     SCB->DCIMVAC = op_addr;             /* register accepts only 32byte aligned values, only bits 31..5 are valid */
+    //     op_addr += __SCB_DCACHE_LINE_SIZE;
+    //     op_size -= __SCB_DCACHE_LINE_SIZE;
+    //   } while ( op_size > 0 );
 
-      __DSB();
-      __ISB();
-    }
+    //   __DSB();
+    //   __ISB();
+    // }
   #endif
 }
 
@@ -2542,21 +2542,21 @@ __STATIC_FORCEINLINE void SCB_InvalidateDCache_by_Addr (void *addr, int32_t dsiz
 __STATIC_FORCEINLINE void SCB_CleanDCache_by_Addr (uint32_t *addr, int32_t dsize)
 {
   #if defined (__DCACHE_PRESENT) && (__DCACHE_PRESENT == 1U)
-    if ( dsize > 0 ) { 
-       int32_t op_size = dsize + (((uint32_t)addr) & (__SCB_DCACHE_LINE_SIZE - 1U));
-      uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_DCACHE_LINE_SIZE - 1U) */;
+    // if ( dsize > 0 ) { 
+    //    int32_t op_size = dsize + (((uint32_t)addr) & (__SCB_DCACHE_LINE_SIZE - 1U));
+    //   uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_DCACHE_LINE_SIZE - 1U) */;
     
-      __DSB();
+    //   __DSB();
 
-      do {
-        SCB->DCCMVAC = op_addr;             /* register accepts only 32byte aligned values, only bits 31..5 are valid */
-        op_addr += __SCB_DCACHE_LINE_SIZE;
-        op_size -= __SCB_DCACHE_LINE_SIZE;
-      } while ( op_size > 0 );
+    //   do {
+    //     SCB->DCCMVAC = op_addr;             /* register accepts only 32byte aligned values, only bits 31..5 are valid */
+    //     op_addr += __SCB_DCACHE_LINE_SIZE;
+    //     op_size -= __SCB_DCACHE_LINE_SIZE;
+    //   } while ( op_size > 0 );
 
-      __DSB();
-      __ISB();
-    }
+    //   __DSB();
+    //   __ISB();
+    // }
   #endif
 }
 
@@ -2572,21 +2572,21 @@ __STATIC_FORCEINLINE void SCB_CleanDCache_by_Addr (uint32_t *addr, int32_t dsize
 __STATIC_FORCEINLINE void SCB_CleanInvalidateDCache_by_Addr (uint32_t *addr, int32_t dsize)
 {
   #if defined (__DCACHE_PRESENT) && (__DCACHE_PRESENT == 1U)
-    if ( dsize > 0 ) { 
-       int32_t op_size = dsize + (((uint32_t)addr) & (__SCB_DCACHE_LINE_SIZE - 1U));
-      uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_DCACHE_LINE_SIZE - 1U) */;
+    // if ( dsize > 0 ) { 
+    //    int32_t op_size = dsize + (((uint32_t)addr) & (__SCB_DCACHE_LINE_SIZE - 1U));
+    //   uint32_t op_addr = (uint32_t)addr /* & ~(__SCB_DCACHE_LINE_SIZE - 1U) */;
     
-      __DSB();
+    //   __DSB();
 
-      do {
-        SCB->DCCIMVAC = op_addr;            /* register accepts only 32byte aligned values, only bits 31..5 are valid */
-        op_addr +=          __SCB_DCACHE_LINE_SIZE;
-        op_size -=          __SCB_DCACHE_LINE_SIZE;
-      } while ( op_size > 0 );
+    //   do {
+    //     SCB->DCCIMVAC = op_addr;            /* register accepts only 32byte aligned values, only bits 31..5 are valid */
+    //     op_addr +=          __SCB_DCACHE_LINE_SIZE;
+    //     op_size -=          __SCB_DCACHE_LINE_SIZE;
+    //   } while ( op_size > 0 );
 
-      __DSB();
-      __ISB();
-    }
+    //   __DSB();
+    //   __ISB();
+    // }
   #endif
 }
 
