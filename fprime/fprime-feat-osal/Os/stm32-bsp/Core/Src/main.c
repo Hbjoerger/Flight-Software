@@ -137,7 +137,7 @@ PUTCHAR_PROTOTYPE
  * @brief  The application entry point.
  * @retval int
  */
-int fsw_main(void)
+int main(void)
 {
   /* USER CODE BEGIN 1 */
   /* USER CODE END 1 */
@@ -1102,6 +1102,7 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
     HAL_Delay(500);
   }
+  fsw_main();
   /* Infinite loop */
   for (;;)
   {
