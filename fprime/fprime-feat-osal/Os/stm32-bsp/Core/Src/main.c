@@ -132,6 +132,7 @@ PUTCHAR_PROTOTYPE
   return ch;
 }
 
+int fsw_main();
 /* USER CODE END 0 */
 
 /**

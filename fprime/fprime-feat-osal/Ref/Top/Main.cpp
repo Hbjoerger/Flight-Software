@@ -40,10 +40,11 @@ Ref::TopologyState state;
 //         run1cycle();
 //     }
 // }
+extern "C" int fsw_main();
 
-int fsw_main(int argc, char* argv[]) {
+int fsw_main() {
     // system("echo XXXXX");
-    printf("XXXXX\n");
+    // printf("XXXXX\n");
     // system("st-flash write remakeFPrime.bin 0x8000000");
     U32 port_number = 0; // Invalid port number forced
     // I32 option;
