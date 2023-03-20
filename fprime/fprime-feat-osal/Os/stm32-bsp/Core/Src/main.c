@@ -131,13 +131,15 @@ PUTCHAR_PROTOTYPE
   HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
   return ch;
 }
+
+int fsw_main();
 /* USER CODE END 0 */
 
 /**
  * @brief  The application entry point.
  * @retval int
  */
-int fsw_main(void)
+int main(void)
 {
   /* USER CODE BEGIN 1 */
   /* USER CODE END 1 */
@@ -189,20 +191,19 @@ int fsw_main(void)
 
   /* USER CODE BEGIN RTOS_TIMERS */
   //  	HAL_GPIO_TogglePin (GPIOA, GPIO_PIN_4);
-  system("st-flash write remakeFPrime.bin 0x8000000");
-  for (int i = 0; i < 20; i++)
-  {
-    printf("\n\rXXXXX1\n\r");
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
-    HAL_Delay(500);
-  }
+  // system("st-flash write remakeFPrime.bin 0x8000000");
+//  for (int i = 0; i < 20; i++)
+//  {
+////    printf("\n\rXXXXX1\n\r");
+//    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+//    HAL_Delay(500);
+//  }
 
   /* start timers, add new ones, ... */
   /* USER CODE END RTOS_TIMERS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
-  
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -210,6 +211,13 @@ int fsw_main(void)
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
+  fsw_main();
+  for (int i = 0; i < 20; i++)
+  {
+//    printf("\n\rXXXXX2\n\r");
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+    HAL_Delay(500);
+  }
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
 
@@ -1094,14 +1102,14 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
-  system("st-flash write remakeFPrime.bin 0x8000000");
+  // system("st-flash write remakeFPrime.bin 0x8000000");
   /* USER CODE BEGIN 5 */
-  for (int i = 0; i < 20; i++)
-  {
-    printf("\n\rXXXXX2\n\r");
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
-    HAL_Delay(500);
-  }
+//  for (int i = 0; i < 20; i++)
+//  {
+////    printf("\n\rXXXXX2\n\r");
+//    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+//    HAL_Delay(500);
+//  }
   /* Infinite loop */
   for (;;)
   {
