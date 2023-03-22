@@ -20,9 +20,11 @@
 #include "main.h"
 #include "string.h"
 #include "cmsis_os.h"
+#include "stdlib.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <../../../../Ref/Top/Main.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

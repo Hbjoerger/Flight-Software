@@ -1,18 +1,14 @@
-#include <getopt.h>
-#include <cstdlib>
-#include <ctype.h>
+#include <Main.hpp>
 
-#include <Os/Log.hpp>
-#include <Ref/Top/RefTopologyAc.hpp>
 
 // void print_usage(const char* app) {
 //     (void) printf("Usage: ./%s [options]\n-p\tport_number\n-a\thostname/IP address\n",app);
 // }
 
-#include <signal.h>
-#include <cstdio>
+// #include <cstdio>
 
-Ref::TopologyState state;
+
+
 // Enable the console logging provided by Os::Log
 // Os::Log logger;
 
@@ -40,7 +36,6 @@ Ref::TopologyState state;
 //         run1cycle();
 //     }
 // }
-extern "C" int fsw_main();
 
 int fsw_main() {
     // system("echo XXXXX");
